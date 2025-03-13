@@ -54,3 +54,17 @@
     gap: 100px;
   }
 }
+
+/* Work process section */
+.work-process_title {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: var(--font-size-xxxl);
+  line-height: var(--line-height-xxxxl);
+  padding-bottom: 142px;
+
+  & .work-process_subtitle {
+    color: var(--secondary-color);
+  }
+}
