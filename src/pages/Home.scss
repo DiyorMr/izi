@@ -1,0 +1,42 @@
+/* Hero section */
+.hero {
+  padding: 30px 0;
+  margin-bottom: 30px;
+
+  .hero_container {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #272829;
+
+    .hero_info {
+      width: 60%;
+      padding-left: 20px;
+
+      .hero_title {
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: var(--font-size-xxxl);
+        line-height: var(--line-height-xxxxl);
+        margin-bottom: 9px;
+
+        .hero_subtitle {
+          color: var(--secondary-color);
+        }
+      }
+      .hero_text {
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-md);
+        color: var(--text-color);
+        margin-bottom: 32px;
+      }
+    }
+    .hero_img {
+      width: 646px;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
