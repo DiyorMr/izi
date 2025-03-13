@@ -40,3 +40,17 @@
     }
   }
 }
+
+/* Slider section */
+.slider {
+  padding-bottom: 200px;
+
+  .slider_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 76px;
+    overflow-x: hidden;
+    gap: 100px;
+  }
+}

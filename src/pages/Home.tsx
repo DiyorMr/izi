@@ -1,6 +1,7 @@
 import "./Home.scss";
 import Button from "@/components/Button";
 import Header from "@/components/Header";
+import SlideItem from "@/components/SliderItem";
 
 const Home = () => {
   return (
@@ -24,6 +25,17 @@ const Home = () => {
             <div className="hero_img">
               <img src="/hero-img.png" alt="" />
             </div>
+          </div>
+        </section>
+
+        {/* Slider section */}
+        <section className="slider">
+          <div className="container slider_container">
+            <SlideItem image="/slide-1.png" />
+            <SlideItem image="/slide-2.png" />
+            <SlideItem image="/slide-3.png" />
+            <SlideItem image="/slide-4.png" />
+            <SlideItem image="/slide-5.png" />
           </div>
         </section>
       </main>
