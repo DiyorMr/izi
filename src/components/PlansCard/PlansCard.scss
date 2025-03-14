@@ -1,0 +1,107 @@
+$bg-color: #1e293b;
+$border-color: #334155;
+$text-color: #fff;
+$accent-color: #14b8a6;
+
+.pricing-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--primary-color);
+  gap: 20px;
+}
+
+.pricing-card {
+  width: 387px;
+  height: 520px;
+  border-radius: 16px;
+  position: relative;
+  padding: 16px;
+  color: var(--primary-color);
+  background-color: var(--content-bg);
+  transition: all 0.3s ease;
+
+  .card-header {
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 7px;
+    margin-bottom: 26px;
+
+    .subtitle {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      margin-bottom: 8px;
+      font-size: var(--font-size-lg);
+      line-height: var(--line-height-xl);
+      font-weight: 600;
+    }
+
+    .description {
+      font-size: var(--font-size-xs);
+      line-height: var(--line-height-sm);
+      color: var(--primary-color);
+    }
+  }
+
+  .features_list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+
+    .features_item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+      gap: 6px;
+
+      .features_text {
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-sm);
+      }
+    }
+  }
+
+  .card-btn {
+    display: block;
+    width: 91%;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    bottom: 16px;
+    position: absolute;
+    bottom: 16px;
+    transition: all 0.3 ease;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  .pro-btn {
+    background-color: $accent-color;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+
+  .description {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 1rem;
+  }
+
+  &:hover,
+  &:first-child {
+    background-color: var(--secondary-color);
+  }
+
+  &:hover .card-btn,
+  &:first-child .card-btn {
+    background-color: var(--primary-color);
+  }
+}

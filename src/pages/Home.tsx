@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import Header from "@/components/Header";
 import SlideItem from "@/components/SliderItem";
 import WorkProcessContentItem from "@/components/WorkProcessContentItem";
+import PlansCard from "@/components/PlansCard";
 
 const Home = () => {
   return (
@@ -86,11 +87,11 @@ const Home = () => {
         <section className="benefits">
           <div className="container benefits_container">
             <div className="benefits_content">
-              <h2 className="benefits_title">
+              <h2 className="section-info_title">
                 Benefits form using our{" "}
-                <span className="benefits_subtitle"> Kotib AI</span>
+                <span className="section-info_subtitle"> Kotib AI</span>
               </h2>
-              <p className="benefits_text">
+              <p className="section-info_text">
                 LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
                 LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
                 LoremLoremLoremLoremLoremLoremLorem
@@ -115,6 +116,34 @@ const Home = () => {
                 text="Embrace the elegance of meticulously crafted designs. Our AI polishes every detail to bring a timeless quality to your creative projects."
                 title="Integrational payment"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* Plans section */}
+        <section className="plans">
+          <div className="container">
+            <div className="plans_content">
+              <h2 className="section-info_title">
+                Affordable Plans for
+                <span className="section-info_subtitle"> Every Need</span>
+              </h2>
+              <p className="section-info_text">
+                Choose the perfect plan for your design projects, from startups
+                to enterprises. Our pricing tiers are designed to offer
+                flexibility and value, ensuring you get the most out of our
+                AI-powered design assistant.
+              </p>
+            </div>
+            <div className="plans-card-wrapper">
+              <div className="switcher-box">
+                <span>Monthly</span>
+                <div className="switcher">
+                  <input type="checkbox" className="toggle" />
+                </div>
+                <span>Yearly</span>
+              </div>
+              <PlansCard />
             </div>
           </div>
         </section>
