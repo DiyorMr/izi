@@ -1,3 +1,4 @@
+import BenefitCard from "@/components/BenefitCard";
 import "./Home.scss";
 import Button from "@/components/Button";
 import Header from "@/components/Header";
@@ -76,6 +77,43 @@ const Home = () => {
                 path="#"
                 buttonText="Download file"
                 img="/process-img.png"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Benefits section */}
+        <section className="benefits">
+          <div className="container benefits_container">
+            <div className="benefits_content">
+              <h2 className="benefits_title">
+                Benefits form using our{" "}
+                <span className="benefits_subtitle"> Kotib AI</span>
+              </h2>
+              <p className="benefits_text">
+                LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+                LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+                LoremLoremLoremLoremLoremLoremLorem
+              </p>
+            </div>
+            <div className="card-wrapper">
+              <BenefitCard
+                text="LoremLoremLoremLoremLoremLoremLoremLorem
+                LoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLorem"
+                title="Multi language"
+                className="active"
+              />
+              <BenefitCard
+                text="LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLorem"
+                title="For Personalized use"
+              />
+              <BenefitCard
+                text="Experience the perfect blend of form and function. Our AI ensures that every design not only looks stunning but also serves its purpose flawlessly."
+                title="Wide target audience"
+              />
+              <BenefitCard
+                text="Embrace the elegance of meticulously crafted designs. Our AI polishes every detail to bring a timeless quality to your creative projects."
+                title="Integrational payment"
               />
             </div>
           </div>

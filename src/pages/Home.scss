@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     border-radius: 40px;
-    background-color: #272829;
+    background-color: var(--content-bg);
 
     .hero_info {
       width: 60%;
@@ -66,5 +66,45 @@
 
   & .work-process_subtitle {
     color: var(--secondary-color);
+  }
+}
+
+/* Benefits section */
+@mixin section-info {
+  width: 676px;
+
+  .benefits_title {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-xxxl);
+
+    & .benefits_subtitle {
+      color: var(--secondary-color);
+    }
+  }
+
+  .benefits_text {
+    color: var(--text-color);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+  }
+}
+
+.benefits {
+  margin-top: 246px;
+  margin-bottom: 63px;
+
+  .benefits_content {
+    @include section-info;
+  }
+
+  .card-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 20px;
   }
 }
