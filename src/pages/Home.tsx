@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import SlideItem from "@/components/SliderItem";
 import WorkProcessContentItem from "@/components/WorkProcessContentItem";
 import PlansCard from "@/components/PlansCard";
+import CustomerStories from "@/components/CustomerStories";
 
 const Home = () => {
   return (
@@ -147,6 +148,37 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        {/* Customer Stories section */}
+        <div className="customer-stories">
+          <div className="container">
+            <div className="customer-stories_content">
+              <h2 className="section-info_title">
+                Customer
+                <span className="section-info_subtitle"> Success</span> Stories
+              </h2>
+              <p className="section-info_text">
+                LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+                LoremLoremLoremLoremLoremLoremLoremLoremLorem
+              </p>
+            </div>
+            {/* <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginLeft: "auto",
+              }}
+            >
+              <div>
+                <img src="/left-arrow.png" />
+              </div>
+              <div>
+                <img src="/right-arrow.png" />
+              </div>
+            </div> */}
+            <CustomerStories />
+          </div>
+        </div>
       </main>
     </>
   );

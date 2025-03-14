@@ -51,7 +51,7 @@ const PlansCard = () => {
   return (
     <div className="pricing-container">
       {pricingPlans.map((plan) => (
-        <div key={plan.id} className="pricing-card">
+        <div className="pricing-card" key={plan.id}>
           <div className="pricing-card_content">
             <div className="card-header">
               <div className="subtitle">{plan.type}</div>
