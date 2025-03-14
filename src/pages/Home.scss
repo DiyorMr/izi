@@ -189,3 +189,21 @@
     @include section-info;
   }
 }
+
+/* FAQ section */
+.faq {
+  margin: 100px 0;
+
+  .faq_container {
+    display: flex;
+    align-items: center;
+    min-height: 467px;
+    padding: 20px 40px;
+    gap: 60px;
+    border-radius: 20px;
+    background-color: var(--content-bg);
+  }
+  .faq_content {
+    @include section-info;
+  }
+}

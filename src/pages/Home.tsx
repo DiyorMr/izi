@@ -6,6 +6,7 @@ import SlideItem from "@/components/SliderItem";
 import WorkProcessContentItem from "@/components/WorkProcessContentItem";
 import PlansCard from "@/components/PlansCard";
 import CustomerStories from "@/components/CustomerStories";
+import Accordion from "@/components/Accordion";
 
 const Home = () => {
   return (
@@ -179,6 +180,23 @@ const Home = () => {
             <CustomerStories />
           </div>
         </div>
+
+        {/* FAQ */}
+        <section className="faq" id="feedbacks">
+          <div className="container faq_container">
+            <div className="faq_content">
+              <h2 className="section-info_title">
+                Frequently Asked
+                <span className="section-info_subtitle"> Questions</span>
+              </h2>
+              <p className="section-info_text">
+                LoremLoremLoremLoremLoremLoremLoremLoremLoremLo
+                remLoremLoremLoremLoremLoremLoremLoremLoremLorem
+              </p>
+            </div>
+            <Accordion />
+          </div>
+        </section>
       </main>
     </>
   );
