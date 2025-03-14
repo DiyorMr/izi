@@ -7,6 +7,8 @@ import WorkProcessContentItem from "@/components/WorkProcessContentItem";
 import PlansCard from "@/components/PlansCard";
 import CustomerStories from "@/components/CustomerStories";
 import Accordion from "@/components/Accordion";
+import ContactForm from "@/components/Form";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -123,7 +125,7 @@ const Home = () => {
         </section>
 
         {/* Plans section */}
-        <section className="plans">
+        <section className="plans" id="plans">
           <div className="container">
             <div className="plans_content">
               <h2 className="section-info_title">
@@ -197,7 +199,25 @@ const Home = () => {
             <Accordion />
           </div>
         </section>
+
+        {/* Contact section */}
+        <section className="contact" id="contact">
+          <div className="container contact_container">
+            <div className="contact_content">
+              <h2 className="section-info_title">
+                Let’s get in
+                <span className="section-info_subtitle"> touch</span>
+              </h2>
+              <p className="section-info_text">
+                LoremLoremLoremLoremLoremLoremLoremLoremLoremLo
+                remLoremLoremLoremLoremLoremLoremLoremLoremLorem
+              </p>
+            </div>
+            <ContactForm />
+          </div>
+        </section>
       </main>
+      <Footer />
     </>
   );
 };

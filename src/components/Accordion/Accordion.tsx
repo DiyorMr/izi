@@ -31,7 +31,7 @@ const Accordion = () => {
       id: "rd6",
       label: "LoremLoremLoremLoremLorem?",
       content:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLorem",
+        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
     },
   ];
 

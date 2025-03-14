@@ -3,7 +3,7 @@ import React from "react";
 import cls from "./Button.module.scss";
 
 interface ButtonProps {
-  className: string;
+  className?: string;
   path: string;
   text: string;
 }
