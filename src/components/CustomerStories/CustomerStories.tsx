@@ -57,7 +57,7 @@ const CustomerStories = () => {
         className="mySwiper"
       >
         {customerStoriesList.map((story) => (
-          <SwiperSlide>
+          <SwiperSlide key={story.id}>
             <div className="customer-stories_card">
               <div className="card-header">
                 <div className="card-image_wrapper">

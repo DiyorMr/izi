@@ -30,15 +30,14 @@ const Accordion = () => {
     {
       id: "rd6",
       label: "LoremLoremLoremLoremLorem?",
-      content:
-        "LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+      content: "LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
     },
   ];
 
   return (
     <section className="accordion">
       {accordionData.map((item) => (
-        <div className="tab">
+        <div className="tab" key={item.id}>
           <input type="radio" name="accordion-2" id={item.id} />
           <label htmlFor={item.id} className="tab__label">
             {item.label}

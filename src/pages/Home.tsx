@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import "./Home.scss";
 
@@ -15,6 +15,27 @@ import PartnerSlider from "@/components/PartnerSlider";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  const [progress, setProgress] = useState<number>(0);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const sectionTop = sectionRef.current.offsetTop;
+        const sectionHeight = sectionRef.current.clientHeight;
+        const scrollY = window.scrollY + window.innerHeight / 2;
+
+        if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
+          const progressPercent =
+            ((scrollY - sectionTop) / sectionHeight) * 100;
+          setProgress(progressPercent);
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const benefits = [
     {
@@ -37,7 +58,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         {/* Hero section */}
         <section className="hero">
@@ -73,7 +94,12 @@ const Home = () => {
               How it
               <span className="work-process_subtitle"> works?</span>
             </h2>
-            <div className="work-process_content">
+            <div className="work-process_content" ref={sectionRef}>
+              <div className="scroll-line"></div>
+              <div
+                className="scroll-indicator"
+                style={{ transform: `translate(-50%, ${progress * 20}px)` }}
+              ></div>
               <WorkProcessContentItem
                 title="Language chousing"
                 text="LoremLoremLoremLoremLoremLoremLoremLoremLorem 
@@ -176,20 +202,6 @@ const Home = () => {
                 LoremLoremLoremLoremLoremLoremLoremLoremLorem
               </p>
             </div>
-            {/* <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginLeft: "auto",
-              }}
-            >
-              <div>
-                <img src="/left-arrow.png" />
-              </div>
-              <div>
-                <img src="/right-arrow.png" />
-              </div>
-            </div> */}
             <CustomerStories />
           </div>
         </div>
