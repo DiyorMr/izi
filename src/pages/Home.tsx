@@ -1,8 +1,10 @@
-import BenefitCard from "@/components/BenefitCard";
+import { useState } from "react";
+
 import "./Home.scss";
+
+import BenefitCard from "@/components/BenefitCard";
 import Button from "@/components/Button";
 import Header from "@/components/Header";
-import SlideItem from "@/components/SliderItem";
 import WorkProcessContentItem from "@/components/WorkProcessContentItem";
 import PlansCard from "@/components/PlansCard";
 import CustomerStories from "@/components/CustomerStories";
@@ -12,6 +14,27 @@ import Footer from "@/components/Footer";
 import PartnerSlider from "@/components/PartnerSlider";
 
 const Home = () => {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  const benefits = [
+    {
+      text: "LoremLoremLoremLoremLoremLoremLoremLorem                LoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLorem",
+      title: "Multi language",
+    },
+    {
+      text: "LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLorem",
+      title: "For Personalized use",
+    },
+    {
+      text: "Experience the perfect blend of form and function. Our AI ensures that every design not only looks stunning but also serves its purpose flawlessly.",
+      title: "Wide target audience",
+    },
+    {
+      text: "Embrace the elegance of meticulously crafted designs. Our AI polishes every detail to bring a timeless quality to your creative projects.",
+      title: "Integrational payment",
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -99,24 +122,15 @@ const Home = () => {
               </p>
             </div>
             <div className="card-wrapper">
-              <BenefitCard
-                text="LoremLoremLoremLoremLoremLoremLoremLorem
-                LoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLorem"
-                title="Multi language"
-                className="active"
-              />
-              <BenefitCard
-                text="LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLorem"
-                title="For Personalized use"
-              />
-              <BenefitCard
-                text="Experience the perfect blend of form and function. Our AI ensures that every design not only looks stunning but also serves its purpose flawlessly."
-                title="Wide target audience"
-              />
-              <BenefitCard
-                text="Embrace the elegance of meticulously crafted designs. Our AI polishes every detail to bring a timeless quality to your creative projects."
-                title="Integrational payment"
-              />
+              {benefits.map((benefit, index) => (
+                <BenefitCard
+                  key={index}
+                  text={benefit.text}
+                  title={benefit.title}
+                  className={index === activeIndex ? "active" : ""}
+                  onClick={() => setActiveIndex(index)}
+                />
+              ))}
             </div>
           </div>
         </section>

@@ -6,15 +6,17 @@ interface BenefitCardProps {
   text: string;
   title: string;
   className?: string;
+  onClick: () => void;
 }
 
 const BenefitCard: React.FC<BenefitCardProps> = ({
-  className,
   text,
   title,
+  className,
+  onClick,
 }) => {
   return (
-    <div className={`benefit-card ${className || ""}`}>
+    <div className={`benefit-card ${className || ""}`} onClick={onClick}>
       <div className="benefit-card_content">
         <p className="benefit-card_text">{text}</p>
         <div className="benefit-card_vector">
