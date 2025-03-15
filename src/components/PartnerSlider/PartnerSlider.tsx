@@ -11,14 +11,14 @@ import SlideItem from "../SliderItem";
 const PartnerSlider = () => {
   return (
     <Swiper
-      slidesPerView={5} // Harakat silliq bo‘lishi uchun auto ishlatamiz
-      loop={true} // Cheksiz aylanish
-      speed={5000} // Sekin va silliq harakat
+      slidesPerView={5} 
+      loop={true} 
+      speed={5000}
       autoplay={{
-        delay: 0, // To‘xtamasligi uchun
+        delay: 0, 
         disableOnInteraction: false,
       }}
-      allowTouchMove={false} // Qo‘lda surish bloklanadi
+      allowTouchMove={false}
       breakpoints={{
         320: {
           slidesPerView: 1,
