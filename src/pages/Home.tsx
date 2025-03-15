@@ -58,7 +58,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main>
         {/* Hero section */}
         <section className="hero">
