@@ -9,6 +9,7 @@ import CustomerStories from "@/components/CustomerStories";
 import Accordion from "@/components/Accordion";
 import ContactForm from "@/components/Form";
 import Footer from "@/components/Footer";
+import PartnerSlider from "@/components/PartnerSlider";
 
 const Home = () => {
   return (
@@ -38,11 +39,7 @@ const Home = () => {
         {/* Slider section */}
         <section className="slider">
           <div className="container slider_container">
-            <SlideItem image="/slide-1.png" />
-            <SlideItem image="/slide-2.png" />
-            <SlideItem image="/slide-3.png" />
-            <SlideItem image="/slide-4.png" />
-            <SlideItem image="/slide-5.png" />
+            <PartnerSlider />
           </div>
         </section>
 
