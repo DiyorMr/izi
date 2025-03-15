@@ -1,12 +1,22 @@
 .header {
   background-color: transparent;
-  padding: 30px 0;
+  padding: 14px 0;
   margin: 20px 0 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  // margin-left: -3px;
 
   .header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    backdrop-filter: blur(20px);
+    border-radius: 46px;
+    padding: 16px 43px 16px 25px;
+    background: linear-gradient(#ffffff00 99.99%, #cbcaca00);
 
     .logo-wrapper {
       display: block;
