@@ -96,12 +96,12 @@ $accent-color: #14b8a6;
   }
 
   &:hover,
-  &:first-child {
+  &.active {
     background-color: var(--secondary-color);
   }
 
   &:hover .card-btn,
-  &:first-child .card-btn {
+  &.active .card-btn {
     background-color: var(--primary-color);
   }
 }

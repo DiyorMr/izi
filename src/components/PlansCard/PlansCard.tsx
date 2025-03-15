@@ -1,9 +1,11 @@
-import React from "react";
+import { useState } from "react";
 
 import "./PlansCard.scss";
 import Button from "../Button";
 
 const PlansCard = () => {
+  const [activeIndex, setActiveIndex] = useState<number>(1);
+
   const pricingPlans = [
     {
       id: 1,
@@ -51,7 +53,11 @@ const PlansCard = () => {
   return (
     <div className="pricing-container">
       {pricingPlans.map((plan) => (
-        <div className="pricing-card" key={plan.id}>
+        <div
+          className={`pricing-card ${plan.id === activeIndex ? "active" : ""}`}
+          key={plan.id}
+          onClick={() => setActiveIndex(plan.id)}
+        >
           <div className="pricing-card_content">
             <div className="card-header">
               <div className="subtitle">{plan.type}</div>
