@@ -177,13 +177,6 @@ const Home = () => {
               </p>
             </div>
             <div className="plans-card-wrapper">
-              <div className="switcher-box">
-                <span>Monthly</span>
-                <div className="switcher">
-                  <input type="checkbox" className="toggle" />
-                </div>
-                <span>Yearly</span>
-              </div>
               <PlansCard />
             </div>
           </div>

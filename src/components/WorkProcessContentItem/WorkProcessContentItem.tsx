@@ -21,7 +21,7 @@ const WorkProcessContentItem: React.FC<WorkProcessContentItemProps> = ({
   return (
     <div className="work-process_content-item">
       <div className="item-content">
-        <h3 className="item-content_tile">{title}</h3>
+        <h3 className="item-content_title">{title}</h3>
         <p className="item-content_text">{text}</p>
         <Button path={path} text={buttonText} />
       </div>

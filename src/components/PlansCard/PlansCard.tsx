@@ -9,44 +9,39 @@ const PlansCard = () => {
   const pricingPlans = [
     {
       id: 1,
-      type: "FREE",
-      price: "$0/m",
-      limit: "Free forever",
-      features: [
-        "Basic AI-generations",
-        "Access to customization tools",
-        "Standard templates library",
-        "5 projects per month",
-      ],
+      type: "standart",
+      price: "36 000 so’m",
+      time: "1 soat vaqt",
+      buttonText: "sotib olish",
     },
     {
       id: 2,
-      type: "BASIC",
-      price: "$14.99/m",
-      limit: "Billed Monthly",
-      features: [
-        "Advanced AI-generations",
-        "Full access to customization tools",
-        "Premium templates library",
-        "Unlimited projects",
-        "Real-time collaboration",
-        "Priority email support",
-      ],
+      type: "standart",
+      price: "100 000 so’m",
+      time: "3 soat vaqt",
+      buttonText: "sotib olish",
     },
     {
       id: 3,
-      type: "PRO",
-      price: "$29.99/m",
-      limit: "Billed Monthly",
-      features: [
-        "All features included in Pro Plan",
-        "Dedicated account manager",
-        "Custom AI solutions and designs",
-        "Onboarding and training sessions",
-        "24/7 priority support",
-        "Advanced analytics and reporting",
-        "Secure cloud storage",
-      ],
+      type: "standart",
+      price: "200 000 so’m",
+      time: "7 soat vaqt",
+      buttonText: "sotib olish",
+    },
+    {
+      id: 4,
+      title: "Katta chegirma",
+      type: "discount",
+      price: "500 000 so’m",
+      time: "17 soat vaqt",
+      buttonText: "sotib olish",
+    },
+    {
+      id: 5,
+      title: "Bizneslar uchun",
+      type: "business",
+      info: "Chegirmali narx uchun biz bilan bog’laning",
+      buttonText: "Bog'lanish",
     },
   ];
 
@@ -54,26 +49,42 @@ const PlansCard = () => {
     <div className="pricing-container">
       {pricingPlans.map((plan) => (
         <div
-          className={`pricing-card ${plan.id === activeIndex ? "active" : ""}`}
+          className={`pricing-card ${plan.id === activeIndex ? "active" : ""} ${
+            plan?.type
+          }`}
           key={plan.id}
           onClick={() => setActiveIndex(plan.id)}
         >
           <div className="pricing-card_content">
-            <div className="card-header">
-              <div className="subtitle">{plan.type}</div>
-              <h2 className="price">{plan.price}</h2>
-              <p className="description">{plan.limit}</p>
-            </div>
+            {plan?.title && (
+              <div className="card-header">
+                <h3 className="price">{plan?.title}</h3>
+              </div>
+            )}
+
             <ul className="features_list">
-              {plan.features.map((feature) => (
-                <li className="features_item" key={feature}>
-                  <img src="/price-icon.svg" alt="feature" />
-                  <p className="features_text">{feature}</p>
+              {plan?.type !== "contact" && plan?.price && (
+                <li className="features_item" key={plan.id}>
+                  <h3 className="features_text">{plan.price}</h3>
                 </li>
-              ))}
+              )}
+              {plan?.type !== "contact" && plan?.time && (
+                <li className="features_item" key={plan.id}>
+                  <h3 className="features_text">{plan.time}</h3>
+                </li>
+              )}
+              {plan?.type == "business" && (
+                <li className="features_item" key={plan.id}>
+                  <p className="features_info">{plan.info}</p>
+                </li>
+              )}
             </ul>
           </div>
-          <Button className="card-btn active" path="#" text="Remix Template" />
+          <Button
+            className="card-btn "
+            path="#contact"
+            text={plan.buttonText}
+          />
         </div>
       ))}
     </div>
