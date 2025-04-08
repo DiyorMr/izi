@@ -54,6 +54,11 @@ const PlansCard = () => {
           }`}
           key={plan.id}
           onClick={() => setActiveIndex(plan.id)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") setActiveIndex(plan.id);
+          }}
         >
           <div className="pricing-card_content">
             {plan?.title && (
@@ -64,17 +69,17 @@ const PlansCard = () => {
 
             <ul className="features_list">
               {plan?.type !== "contact" && plan?.price && (
-                <li className="features_item" key={plan.id}>
+                <li className="features_item" key={`${plan.id}-price`}>
                   <h3 className="features_text">{plan.price}</h3>
                 </li>
               )}
               {plan?.type !== "contact" && plan?.time && (
-                <li className="features_item" key={plan.id}>
+                <li className="features_item" key={`${plan.id}-time`}>
                   <h3 className="features_text">{plan.time}</h3>
                 </li>
               )}
               {plan?.type == "business" && (
-                <li className="features_item" key={plan.id}>
+                <li className="features_item" key={`${plan.id}-info`}>
                   <p className="features_info">{plan.info}</p>
                 </li>
               )}

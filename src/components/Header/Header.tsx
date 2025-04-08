@@ -8,7 +8,7 @@ const Headerr = () => {
     <header className="header">
       <div className="container header_container">
         <a className="logo-wrapper" href="/">
-          <img className="logo" src="/logo.svg" alt="Logo" />
+          <img className="logo" src="/images/logo.svg" alt="Logo" />
         </a>
         <nav>
           <ul className="nav-list">
