@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Header.scss";
 import Button from "../Button";
 
-const Headerr = () => {
+const Header = () => {
   return (
     <header className="header">
       <div className="container header_container">
@@ -35,4 +35,4 @@ const Headerr = () => {
   );
 };
 
-export default Headerr;
+export default Header;
