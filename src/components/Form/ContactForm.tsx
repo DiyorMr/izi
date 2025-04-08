@@ -34,14 +34,14 @@ const ContactForm = () => {
       <div className={cls.contactInfo}>
         <div className={cls.infoItem}>
           <div>
-            <img src="/email.svg" alt="Email" />
+            <img src="/images/email.svg" alt="Email" />
             <input type="email" placeholder="Email" disabled />
           </div>
           <p>support@aimlab.uz</p>
         </div>
         <div className={cls.infoItem}>
           <div>
-            <img src="/phone.svg" alt="Phone" />
+            <img src="/images/phone.svg" alt="Phone" />
             <input type="tel" placeholder="Phone" disabled />
           </div>
           <p>+998930576472</p>

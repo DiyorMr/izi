@@ -41,19 +41,19 @@ const PartnerSlider = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <SlideItem image="/slide-1.png" />
+        <SlideItem image="/images/slide-1.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/slide-2.png" />
+        <SlideItem image="/images/slide-2.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/slide-3.png" />
+        <SlideItem image="/images/slide-3.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/slide-4.png" />
+        <SlideItem image="/images/slide-4.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/slide-5.png" />
+        <SlideItem image="/images/slide-5.png" />
       </SwiperSlide>
     </Swiper>
   );

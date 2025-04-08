@@ -75,7 +75,7 @@ const Home = () => {
               <Button path="#contact" text="Start now" />
             </div>
             <div className="hero_img">
-              <img src="/hero-img.png" alt="" />
+              <img src="/images/hero-img.png" alt="" />
             </div>
           </div>
         </section>
@@ -106,28 +106,28 @@ const Home = () => {
                 LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem"
                 path="#"
                 buttonText="Chouse Language"
-                img="/process-img.png"
+                img="/images/process-img.png"
               />
               <WorkProcessContentItem
                 title="Uploading audio or video file"
                 text="LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLoremL"
                 path="#"
                 buttonText="Upload file"
-                img="/process-img.png"
+                img="/images/process-img.png"
               />
               <WorkProcessContentItem
                 title="Find out what to do"
                 text="LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem"
                 path="#"
                 buttonText="Give command"
-                img="/process-img.png"
+                img="/images/process-img.png"
               />
               <WorkProcessContentItem
                 title="Download your file"
                 text="LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem"
                 path="#"
                 buttonText="Download file"
-                img="/process-img.png"
+                img="/images/process-img.png"
               />
             </div>
           </div>

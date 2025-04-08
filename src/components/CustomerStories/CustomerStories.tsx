@@ -11,21 +11,21 @@ const CustomerStories = () => {
   const customerStoriesList = [
     {
       id: 1,
-      avatar: "/user1.png",
+      avatar: "/images/user1.png",
       name: "John D.",
       story:
         "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLo remLoremLoremLoremLoremLoremLoremLoremLoremLoremLor emLoremLoremLoremLoremLoremLoremLorem",
     },
     {
       id: 2,
-      avatar: "/user2.png",
+      avatar: "/images/user2.png",
       name: "Michael S.",
       story:
         "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLo    remLoremLoremLoremLoremLoremLoremLoremLoremLoremLor emLoremLoremLoremLoremLoremLoremLorem",
     },
     {
       id: 3,
-      avatar: "/user3.png",
+      avatar: "/images/user3.png",
       name: "John D.",
       story:
         "This tool is a game-changer! It’s incredibly intuitive and the results are always impressive. I can't imagine working without it now.",

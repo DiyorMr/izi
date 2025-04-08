@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="footer_top">
           {/* Logo */}
           <div className="logo">
-            <img src="/logo.svg" alt="KOTIE.AI" />
+            <img src="/images/logo.svg" alt="KOTIE.AI" />
           </div>
 
           {/* Navigation Links */}
