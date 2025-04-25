@@ -1,0 +1,54 @@
+.faq-section {
+    background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 100%);
+    text-align: center;
+    color: white;
+    // margin-bottom: 152px;
+
+    .tag {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 65.28px;
+        letter-spacing: -1.92px;
+        text-align: center;
+    }
+}
+
+.faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 60px 40px;
+    &_title {
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 70.4px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 4px;
+    }
+
+    &_text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .collapse_box {
+        width: 530px;
+    }
+}

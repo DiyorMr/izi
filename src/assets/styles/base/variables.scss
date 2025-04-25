@@ -1,29 +1,30 @@
 :root {
-  /* 🎨 Colors */
-  --main-bg-color: #08141d;
-  --content-bg: #272829;
-  --primary-color: #fff;
-  --secondary-color: #914bf1;
-  --text-color: #d9d9d9;
-  --info-color: #a3a3a3;
+	/* 🎨 Colors */
+	--main-bg-color: #000000;
+	--content-bg: #272829;
+	--primary-color: #fff;
+	--secondary-color: #914bf1;
+	--text-color: #d9d9d9;
+	--info-color: #a3a3a3;
 
-  /* 📝 Typography */
-  --font-family: "Outfit", sans-serif;
-  --font-size-xs: 14px;
-  --font-size-sm: 16px;
-  --font-size-md: 18px;
-  --font-size-lg: 34px;
-  --font-size-xl: 48px;
-  --font-size-xxl: 64px;
-  --font-size-xxxl: 78px;
+	/* 📝 Typography */
+	--font-family: 'IBM Plex Mono', monospace;
+	--font-size-xs: 12px;
+	--font-size-sm: 14px;
+	--font-size-md: 16px;
+	--font-size-lg: 18px;
+	--font-size-xl: 20px;
+	--font-size-xxl: 56px;
+	--font-size-xxxl: 64px;
+	--font-size-xxxxl: 88px;
 
-  /* Line height */
-  --line-height-xs: 13px;
-  --line-height-sm: 19.8px;
-  --line-height-md: 21.6px;
-  --line-height-lg: 24px;
-  --line-height-xl: 40.8px;
-  --line-height-xxl: 57.6px;
-  --line-height-xxxl: 70.4px;
-  --line-height-xxxxl: 93.6px;
+	/* Line height */
+	--line-height-xs: 13px;
+	--line-height-sm: 19.8px;
+	--line-height-md: 21.6px;
+	--line-height-lg: 24px;
+	--line-height-xl: 40.8px;
+	--line-height-xxl: 57.6px;
+	--line-height-xxxl: 70.4px;
+	--line-height-xxxxl: 93.6px;
 }

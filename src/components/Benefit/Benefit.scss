@@ -1,0 +1,111 @@
+.benefits-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0;
+
+    .stat {
+        width: 33.3%;
+        padding: 49px 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        .stat-value {
+            background: linear-gradient(-46.17deg, #00a360, #68f7bb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 56px;
+            font-weight: 400;
+            line-height: 53.76px;
+            letter-spacing: -1.68px;
+            text-align: center;
+        }
+
+        .stat-label {
+            display: block;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .stat:first-child,
+    .stat:nth-child(2) {
+        border-left: none;
+    }
+
+    .stat:nth-child(3) {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.benefits-menu {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+
+    .menu-list {
+        width: 33.3%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .menu-item {
+            height: 83.19px;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.active,
+            &:hover {
+                box-shadow: -1px 0 0 #68f7bb;
+                background: rgba(255, 255, 255, 0.05);
+                color: #fff;
+            }
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .menu-content {
+        width: calc(66.6% - 32px);
+        text-align: center;
+
+        .content-title {
+            background: linear-gradient(0deg, gray, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 33.28px;
+            letter-spacing: -0.96px;
+            text-align: left;
+            padding-top: 28px;
+        }
+
+        .content-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.92px;
+            letter-spacing: 0.14px;
+            text-align: left;
+            padding-top: 110px;
+        }
+    }
+}

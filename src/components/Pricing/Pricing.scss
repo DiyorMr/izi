@@ -1,0 +1,299 @@
+.pricing_section {
+    background: #000;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.pricing_button {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 140px;
+    padding: 9px;
+    border-radius: 1000px;
+    box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 80px;
+
+    .icon {
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+    }
+
+    &:hover {
+        background: #333;
+    }
+}
+
+.pricing_title {
+    background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 65.28px;
+    letter-spacing: -1.92px;
+    text-align: center;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: inset 0px 0px 48px 0px rgba(255, 255, 255, 0.07), inset 0px -2px 0px 0px rgb(104, 247, 187);
+    background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+        background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24.96px;
+        letter-spacing: -0.72px;
+        text-align: left;
+    }
+
+    &__price {
+        background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 24.96px;
+        letter-spacing: -0.72px;
+        text-align: left;
+        padding: 35px 0;
+
+    }
+
+    &__period {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24.96px;
+        letter-spacing: -0.72px;
+        text-align: left;
+    }
+
+    &__desc {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17.92px;
+        letter-spacing: 0.14px;
+        text-align: left;
+    }
+
+    &__features {
+        margin: 16px 0;
+        padding-left: 0;
+        list-style: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 17.92px;
+        letter-spacing: 0.14px;
+        text-align: left;
+
+        li {
+            font-size: 12px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+
+            span {
+                color: #00ffcc;
+                margin-right: 6px;
+            }
+        }
+    }
+
+    &__button {
+        color: rgb(255, 255, 255);
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        width: 216px;
+        height: 48.39px;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(5px);
+        background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
+    }
+
+    &.highlight {
+        border-radius: 24px;
+        box-shadow: inset 0px 0px 48px 0px rgba(255, 255, 255, 0.07), inset 0px -2px 0px 0px rgb(104, 247, 187);
+        background: linear-gradient(45.00deg, rgba(104, 247, 187, 0.07) 0.045%, rgba(104, 247, 187, 0.2) 99.955%);
+
+        .card__price {
+            color: #00ffcc;
+        }
+
+        .card__button {
+            color: rgb(0, 0, 0);
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 14.4px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            width: 216px;
+            height: 48.39px;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
+            background: linear-gradient(165.27deg, rgb(104, 247, 187) -16.099%, rgb(0, 163, 96) 116.099%);
+        }
+    }
+}
+
+.pricing_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    margin-top: 172px;
+    padding: 0 24px;
+
+    &_plans {
+        &_title {
+            background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24.96px;
+            letter-spacing: -0.72px;
+            text-align: left;
+            width: 360px;
+        }
+
+        &_text {
+            margin-top: 80px;
+            text-align: center;
+
+
+            p {
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.92px;
+                letter-spacing: 0.14px;
+            }
+            
+        }
+    }
+
+    &_basic {
+        &_title {
+            background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24.96px;
+            letter-spacing: -0.72px;
+            text-align: left;
+        }
+
+        &_btn {
+            width: 338.67px;
+            height: 37.39px;
+            border-radius: 8px;
+            box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
+            background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+        }
+    }
+
+    &_premium {
+        &_title {
+            background: linear-gradient(-28.71deg, rgb(0, 163, 96), rgb(104, 247, 187));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24.96px;
+            letter-spacing: -0.72px;
+            text-align: left;
+        }
+
+        &_btn {
+            width: 338.67px;
+            height: 37.39px;
+            border-radius: 8px;
+            box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
+            background: linear-gradient(163.06deg, rgb(104, 247, 187) 0%, rgb(0, 163, 96) 100%);
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+        }
+    }
+}

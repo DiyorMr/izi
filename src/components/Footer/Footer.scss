@@ -1,61 +1,110 @@
 .footer {
-  background: var(--content-bg);
-  color: white;
-  text-align: center;
-  margin-top: 150px;
-  padding: 80px 0;
+    background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
+    padding: 32px;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 20px;
 
-  .footer_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 60px 0;
+    &_content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
 
-    .logo img {
-      width: 100px;
-    }
+        &_columns {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 32px;
 
-    .navLinks {
-      display: flex;
-      gap: 1.5rem;
+            &_column {
+                flex: 1;
+                min-width: 150px;
 
-      a {
-        color: white;
-        font-size: var(--font-size-md);
-        line-height: var(--line-height-lg);
-        transition: all 0.3s;
+                h4 {
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14.4px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
 
-        &:hover {
-          opacity: 0.9;
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14.4px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        text-transform: uppercase;
+                        padding: 16px 0;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #00d084;
+                        }
+                    }
+                }
+            }
+
+            &_cta {
+                flex: 1;
+                min-width: 250px;
+                text-align: right;
+
+                h3 {
+                    background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 24.96px;
+                    letter-spacing: -0.72px;
+                    text-align: left;
+                }
+
+                .btn {
+                    display: block;
+                    width: 100%;
+                    margin-top: 8px;
+                    padding: 9.6px;
+                    border-radius: 6.4px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    border: none;
+
+                    &.green {
+                        background: #00d084;
+                        color: black;
+                    }
+
+                    &.dark {
+                        background: #2b2b2b;
+                        color: white;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 
-  .divider {
-    border: none;
-    height: 1px;
-    background: #333;
-    // margin: 1.5rem 0;
-  }
-
-  .bottomLinks {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 30px;
-    gap: 20px;
-
-    a {
-      font-size: var(--font-size-xs);
-      font-weight: 500;
-      line-height: var(--line-height-md);
-      color: #a3a3a3;
-      text-decoration: none;
-      transition: all 0.3s;
-
-      &:hover {
-        opacity: 0.9;
-      }
+    &_bottom {
+        margin-top: 20px;
+        padding: 22px;
+        border-top: 1px solid #222;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.5);
+        background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
     }
-  }
 }

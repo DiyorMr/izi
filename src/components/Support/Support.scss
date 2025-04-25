@@ -1,0 +1,228 @@
+.support_section {
+    background: #000; // qora fon
+    text-align: center;
+    padding: 4rem 1rem;
+    color: white;
+
+    &_tag {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 12px;
+        width: 120px;
+        border-radius: 1000px;
+        box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+}
+
+.support_cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #000;
+
+    .card {
+        background: linear-gradient(to bottom, #111, #1a1a1a);
+        border: 1px solid rgba(0, 208, 132, 0.3);
+        border-radius: 20px;
+        padding: 32px 24px;
+        text-align: left;
+        color: white;
+        width: 100%;
+        transition: 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 0 15px rgba(0, 208, 132, 0.5);
+        }
+
+        .icon {
+            font-size: 24px;
+            color: #00d084;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.92px;
+            letter-spacing: 0.14px;
+            text-align: left;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(5px);
+            background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
+            color: white;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.2s ease;
+            font-weight: 400;
+            line-height: 14.4px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 32px;
+
+            &:hover {
+                background: #00d084;
+                color: black;
+            }
+        }
+    }
+}
+
+
+.contact-form {
+    background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    width: 100%;
+    margin-bottom: 80px;
+
+    .form-card {
+        background: linear-gradient(to bottom, #111, #1b1b1b);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 60px rgba(0, 208, 132, 0.3);
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+
+        .tags {
+            background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 100%);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1000px;
+            margin: 0 130px 16px 130px;
+            cursor: pointer;
+
+
+            .icon {
+                width: 18px;
+                height: 18px;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        h2 {
+            background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 33.28px;
+            letter-spacing: -0.96px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            input,
+            textarea {
+                height: 54.39px;
+                box-sizing: border-box;
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                border-radius: 8px;
+                background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 100%);
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0%;
+                text-align: left;
+                padding: 24px;
+            }
+
+            .row {
+                display: flex;
+                gap: 10px;
+
+                input {
+                    flex: 1;
+                }
+            }
+
+            textarea {
+                height: 120px;
+                outline: none;
+            }
+
+            button {
+                border-radius: 12px;
+                box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
+                background: linear-gradient(168.07deg, rgb(104, 247, 187) 0%, rgb(0, 163, 96) 100%);
+                color: rgb(0, 0, 0);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.4px;
+                letter-spacing: 0%;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 15px;
+                cursor: pointer;
+
+                &:hover {
+                    background: #00d084;
+                }
+            }
+        }
+    }
+}

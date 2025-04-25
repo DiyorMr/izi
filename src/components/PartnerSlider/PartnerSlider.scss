@@ -1,6 +1,8 @@
 .swiper {
   width: 100%;
   height: 100%;
+ 
+
 
   .swiper-slide {
     display: flex;
@@ -17,5 +19,5 @@
 }
 
 .mySwiper .swiper-wrapper {
-  transition-timing-function: linear !important; // Harakatni tekis qilish
+  transition-timing-function: linear !important;
 }
