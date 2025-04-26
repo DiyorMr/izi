@@ -67,28 +67,35 @@
 }
 
 .contact_forms {
+    position: relative;
+    margin: 100px 0;
+
+    img {
+        width: 100%;
+    }
 
     .contact-form {
-        background-image: url(/images/supbacg.svg);
-        background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 100%);
+        width: 688px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 80px 20px;
-        width: 100%;
-        margin: 40px 0 80px 0;
 
         .form-card {
             background: linear-gradient(to bottom, #111, #1b1b1b);
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 0 60px rgba(0, 208, 132, 0.3);
-            max-width: 500px;
             width: 100%;
             text-align: center;
 
 
             .tags {
+                width: 150px;
                 background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 100%);
                 text-align: center;
                 color: rgba(255, 255, 255, 0.7);
@@ -105,9 +112,8 @@
                 box-sizing: border-box;
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 border-radius: 1000px;
-                margin: 0 130px 16px 130px;
+                margin: 0 auto 16px;
                 cursor: pointer;
-
 
                 .icon {
                     width: 18px;
@@ -129,6 +135,7 @@
                 line-height: 33.28px;
                 letter-spacing: -0.96px;
                 text-align: center;
+                margin-bottom: 62px;
             }
 
             form {

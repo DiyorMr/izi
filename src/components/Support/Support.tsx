@@ -18,14 +18,15 @@ const Support = () => {
                 }
 
             </section>
-            <div className="contact_forms">
+            <section className="contact_forms">
+                <img src="/images/supbacg.svg" alt="bg-image" />
                 <div className="contact-form">
                     <div className="form-card">
                         <div className="tags">
                             <Pen className='icon' />
-                            GET IN TOUCH</div>
+                            GET IN TOUCH
+                        </div>
                         <h2>We'd Love to<br />Hear from You</h2>
-
                         <form>
                             <input type="text" placeholder="FULL NAME" required />
                             <div className="row">
@@ -37,7 +38,7 @@ const Support = () => {
                         </form>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
 
     )

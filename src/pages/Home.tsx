@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
 import './Home.scss'
-import { BadgeDollarSign, Component, Headset, MessageSquareText, ShieldCheck, Sparkles } from 'lucide-react'
+import { BadgeDollarSign, BadgeHelp, Component, Headset, MessageSquareText, ShieldCheck, Sparkles } from 'lucide-react'
 import PartnerSlider from '@/components/PartnerSlider'
 import Works from '@/components/Works'
 import Benefit from '@/components/Benefit'
@@ -95,7 +95,18 @@ const Home = () => {
                 <Pricing />
             </section>
             {/* Faq section */}
-            <Faq />
+            <section className="faq-section">
+                <div className="container">
+                    <div className="faq">
+                        <div className="faq_tag">
+                            <BadgeHelp />
+                            FAQ
+                        </div>
+                        <h1>Got Questions?<br />We've Got Answers!</h1>
+                    </div>
+                    <Faq />
+                </div>
+            </section>
             {/* Support section */}
             <section className="support container" id='support'>
                 <div className="support_section_tag">

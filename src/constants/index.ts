@@ -208,42 +208,52 @@ export const infoPremium = [
 ]
 export const modalData = [
     {
+        id: '1',
         title: "What can Penny help me with?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '2',
         title: "Is Penny free to use?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '3',
         title: "How does Penny provide personalized financial advice?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '4',
         title: "Can I track multiple savings goals with Penny?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '5',
         title: "Is my financial data safe with Penny?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '6',
         title: "Does Penny offer educational resources?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '7',
         title: "How does Penny provide personalized financial advice?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '8',
         title: "Can I track multiple savings goals with Penny?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '9',
         title: "Is my financial data safe with Penny?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
+        id: '10',
         title: "Does Penny offer educational resources?",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },

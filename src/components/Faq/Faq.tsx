@@ -1,31 +1,23 @@
-import { BadgeHelp } from 'lucide-react'
 import './Faq.scss'
-import Section from './section'
 import { modalData } from '@/constants'
 
 const Faq = () => {
     return (
-        <section className="faq-section">
-            <div className="container">
-                <div className="faq">
-                    <div className="faq_tag">
-                        <BadgeHelp />
-                        FAQ
+        <div className="faq_info">
+            <div className="collapse_box">
+                {modalData.map((item) => (
+                    <div className="tab" key={item.id}>
+                        <input type="radio" name="accordion-2" id={item.id} />
+                        <label htmlFor={item.id} className="tab__label">
+                            {item.title}
+                        </label>
+                        <div className="tab__content">
+                            <p>{item.text}</p>
+                        </div>
                     </div>
-                    <h1>Got Questions?<br />We've Got Answers!</h1>
-                </div>
-
-                <div className="faq_info">
-                    <div className="collapse_box">
-                        {modalData.map((item) => (
-                            <Section title={item.title} key={item.title}>
-                                {item.text}
-                            </Section>
-                        ))}
-                    </div>
-                </div>
+                ))}
             </div>
-        </section>
+        </div>
     )
 }
 

@@ -10,22 +10,22 @@ const Header = () => {
                 <nav>
                     <ul className="header_container_list">
                         <li className="header_container_list_item">
-                            <a href="#about-project">
+                            <a href="#features">
                                 Features
                             </a>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#work-process">
+                            <a href="#pricing">
                                 Pricing
                             </a>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#feedbacks">
+                            <a href="#about-us">
                                 About us
                             </a>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#feedbacks">
+                            <a href="#support">
                                 Support
                             </a>
                         </li>
