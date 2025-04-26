@@ -6,7 +6,7 @@ const Works = () => {
             <div className='works_steps_box container'>
                 <div className="step">
                     <div className="icon">
-                        <img src="/public/images/work1.svg" alt="Create Icon" />
+                        <img src="/images/work1.svg" alt="Create Icon" />
                     </div>
                     <div className="content">
                         <div className="number">1</div>
@@ -17,7 +17,7 @@ const Works = () => {
 
                 <div className="step">
                     <div className="icon">
-                        <img src="/public/images/work2.svg" alt="Upload Icon" />
+                        <img src="/images/work2.svg" alt="Upload Icon" />
                     </div>
                     <div className="content">
                         <div className="number">2</div>
@@ -28,7 +28,7 @@ const Works = () => {
 
                 <div className="step">
                     <div className="icon">
-                        <img src="/public/images/work3.svg" alt="Test Icon" />
+                        <img src="/images/work3.svg" alt="Test Icon" />
                     </div>
                     <div className="content">
                         <div className="number">3</div>
@@ -39,7 +39,7 @@ const Works = () => {
 
                 <div className="step">
                     <div className="icon">
-                        <img src="/public/images/work4.svg" alt="Deploy Icon" />
+                        <img src="/images/work4.svg" alt="Deploy Icon" />
                     </div>
                     <div className="content">
                         <div className="number">4</div>
