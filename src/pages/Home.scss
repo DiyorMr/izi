@@ -147,12 +147,7 @@
         letter-spacing: 0%;
         text-align: center;
         text-transform: uppercase;
-        cursor: pointer;
         margin-top: 80px;
-
-        &:hover {
-            background: #333;
-        }
     }
 
     h1 {
@@ -260,3 +255,140 @@
     }
 
 }
+
+/* Customers section */
+.customers {
+    background: #000;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+
+    &_button {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 80px auto 10px;
+        gap: 8px;
+        width: 140px;
+        padding: 9px;
+        border-radius: 1000px;
+        box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+
+        .icon {
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &_title {
+        background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 65.28px;
+        letter-spacing: -1.92px;
+        text-align: center;
+    }
+}
+
+/*Pricing section*/
+.pricing {
+    background: #000;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+
+    &_button {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 80px auto 20px;
+        gap: 8px;
+        width: 140px;
+        padding: 9px;
+        border-radius: 1000px;
+        box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+
+        .icon {
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &_title {
+        background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 65.28px;
+        letter-spacing: -1.92px;
+        text-align: center;
+    }
+}
+
+/* Support section */
+.support {
+    background: #000; // qora fon
+    color: white;
+
+    .support_section_tag {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 12px;
+        width: 120px;
+        margin-top: 140px;
+        border-radius: 1000px;
+        box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
+    }
+
+    h1 {
+        background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 65.28px;
+        letter-spacing: -1.92px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+}
+
+/* Footer section */

@@ -1,57 +1,4 @@
-.pricing_section {
-    background: #000;
-    text-align: center;
-    padding: 40px 20px;
-    color: #fff;
-}
-
-.pricing_button {
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 140px;
-    padding: 9px;
-    border-radius: 1000px;
-    box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.4px;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 80px;
-
-    .icon {
-        border-radius: 50%;
-        width: 18px;
-        height: 18px;
-    }
-
-    &:hover {
-        background: #333;
-    }
-}
-
-.pricing_title {
-    background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 65.28px;
-    letter-spacing: -1.92px;
-    text-align: center;
-}
-
-.pricing {
+.pricings {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -77,7 +24,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
         font-size: 24px;
         font-weight: 400;
         line-height: 24.96px;

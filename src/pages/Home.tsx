@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
 import './Home.scss'
-import { Component, ShieldCheck, Sparkles } from 'lucide-react'
+import { BadgeDollarSign, Component, Headset, MessageSquareText, ShieldCheck, Sparkles } from 'lucide-react'
 import PartnerSlider from '@/components/PartnerSlider'
 import Works from '@/components/Works'
 import Benefit from '@/components/Benefit'
@@ -44,7 +44,7 @@ const Home = () => {
                 </div>
             </section>
             {/* Features section */}
-            <section className="features container">
+            <section className="features container" id='features'>
                 <div className="tag">
                     <Component />
                     KEY FEATURES
@@ -64,12 +64,12 @@ const Home = () => {
                 </div>
             </section>
             {/* Works section */}
-            <section className="works">
+            <section className="works" id='works'>
                 <h2>How it Works?</h2>
                 <Works />
             </section>
             {/* Benefit section */}
-            <section className="benefits container">
+            <section className="benefits container" id='benefits'>
                 <div className="benefits_button">
                     <ShieldCheck />
                     Benefits
@@ -77,10 +77,37 @@ const Home = () => {
                 <h2 className="benefits_title">Reap the Rewards<br />of Using Penny</h2>
                 <Benefit />
             </section>
-            <Customers />
-            <Pricing />
+            {/* Customers section */}
+            <section className="customers container" id='customers'>
+                <button className="customers_button">
+                    <MessageSquareText className='icon' />
+                    Testimonials
+                </button>
+                <h2 className="customers_title">Why Customers<br />Love Penny</h2>
+                <Customers />
+            </section>
+            {/* Pricing section */}
+            <section className="pricing container" id='pricing'>
+                <button className="pricing_button">
+                    <BadgeDollarSign className='icon' />
+                    Pricing</button>
+                <h2 className="pricing_title">Simple and<br />Affordable Plans</h2>
+                <Pricing />
+            </section>
+            {/* Faq section */}
             <Faq />
-            <Support />
+            {/* Support section */}
+            <section className="support container" id='support'>
+                <div className="support_section_tag">
+                    <Headset />
+                    Support
+                </div>
+                <h1>Expert Help,<br />
+                    Anytime You Need</h1>
+                <Support />
+            </section>
+            {/* Footer section */}
+
             <Footer />
         </>
     )

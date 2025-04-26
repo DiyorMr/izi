@@ -1,72 +1,10 @@
-import { BadgeDollarSign } from "lucide-react"
 import "./Pricing.scss"
-import { infoBasic, infoData, infoPremium } from "./data";
-
-
-const plans = [
-    {
-        title: 'Basic',
-        price: 'CUSTOM',
-        features: [
-            'Access to Budgeting Tools',
-            'Basic Budgeting and Expense Tracking',
-            'Access to Educational Resources',
-            'Real-time Chat Support'
-        ],
-        highlight: false,
-    },
-    {
-        title: 'Basic',
-        price: 'FREE',
-        features: [
-            'Access to Budgeting Tools',
-            'Basic Budgeting and Expense Tracking',
-            'Access to Educational Resources',
-            'Real-time Chat Support'
-        ],
-        highlight: false,
-    },
-    {
-        title: 'Premium',
-        price: '$12',
-        period: '/month',
-        features: [
-            'All Basic Plan Features',
-            'Personalized Financial Advice',
-            'Advanced Investment Tracking',
-            'Custom Savings Goals with Tracker',
-            'Priority Chat Support'
-        ],
-        highlight: true,
-    },
-    {
-        title: 'Basic',
-        price: '$29',
-        period: '/month',
-        features: [
-            'Access to Budgeting Tools',
-            'Basic Budgeting and Expense Tracking',
-            'Access to Educational Resources',
-            'Real-time Chat Support',
-            'Access to Educational Resources',
-            'Real-time Chat Support'
-        ],
-        highlight: false,
-    }
-];
-
-
+import { infoBasic, infoData, infoPremium, plansData } from "@/constants";
 const Pricing = () => {
     return (
-        <div className="container">
-            <div className="pricing_section">
-                <button className="pricing_button">
-                    <BadgeDollarSign className='icon' />
-                    Pricing</button>
-                <h2 className="pricing_title">Simple and<br />Affordable Plans</h2>
-            </div>
-            <div className="pricing">
-                {plans.map((plan, index) => (
+        <>
+            <div className="pricings">
+                {plansData.map((plan, index) => (
                     <div className={`card ${plan.highlight ? 'highlight' : ''}`} key={index}>
                         <div className="card__title">{plan.title}</div>
                         <div className="card__price">
@@ -126,7 +64,8 @@ const Pricing = () => {
                     }
                 </div>
             </div>
-        </div>
+        </>
+
     )
 }
 
