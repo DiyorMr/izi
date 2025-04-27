@@ -78,7 +78,7 @@ const Home = () => {
                 <Benefit />
             </section>
             <Customers />
-            <Pricing />
+            {/* <Pricing /> */}
             <Faq />
             <Support />
             <Footer />
