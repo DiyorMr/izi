@@ -1,0 +1,70 @@
+.value_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    gap: 20px;
+
+    &_item {
+        border-radius: 20px;
+        background: rgb(39, 40, 41);
+        box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07), inset 0px -2px 0px 0px rgb(104, 247, 187);
+        padding: 20px;
+
+        &_body {
+
+
+            h1 {
+                background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 33.28px;
+                letter-spacing: -0.96px;
+                text-align: left;
+            }
+
+            &_box {
+                position: relative;
+
+                &_icon {
+                    width: 176px;
+                    height: 176px;
+                    border-radius: 88px;
+                    flex-shrink: 0;
+                    opacity: var(--opacity-25, 0.25);
+                    background: var(--color-spring-green-69, #68F7BB);
+                    filter: blur(40px);
+                    margin-left: -10px;
+                }
+
+                img {
+                    position: absolute;
+                    top: 24px;
+                    left: 24px;
+                }
+            }
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.92px;
+            letter-spacing: 0.14px;
+            text-align: left;
+        }
+    }
+
+    &_item:first-child,
+    &_item:nth-child(4) {
+        width: 45%;
+    }
+
+    &_item:nth-child(2),
+    &_item:nth-child(3) {
+        width: 45%;
+    }
+}

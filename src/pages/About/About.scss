@@ -1,0 +1,280 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.rcontainer {
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.rheader {
+    background-image: url(../../../public/images/headerbg.png);
+    background-size: cover;
+    height: 728px;
+    display: flex;
+    align-items: center;
+}
+
+.rheader-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid rgb(188, 185, 185);
+    border-radius: 1000px;
+    width: 230px;
+    height: 34px;
+
+    background-color: rgba(91, 88, 88, 0.947);
+}
+
+.rheader-box-title {
+    font-family: "IBM Plex Mono", monospace;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.rheader-img {
+    margin: 0;
+}
+
+.rheader-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 88px;
+    color: white;
+    text-align: center;
+}
+
+.rheader-text {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    font-size: 14px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.rhero {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.21), #000000);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.rhero-content {
+    position: relative;
+    border-radius: 12px;
+    z-index: 0;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.rhero-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(90deg, #00a35fc9, #0cc477);
+    border-radius: 12px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    z-index: -1;
+}
+
+.rhero-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 190px;
+    text-align: center;
+}
+
+.rhero-title {
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #00a35f, #0cc477);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.rhero-text {
+    font-size: 20px;
+    background: linear-gradient(90deg, #FFFFFF80, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.rsection {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.21), #000000);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.rsection-content {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.rsection-btn {
+    margin: 5px 0;
+    width: 117px;
+    height: 36px;
+    background: linear-gradient(32deg, rgba(255, 255, 255, 0.1), #00A360);
+    border-radius: 393px;
+    font-size: 16px;
+    color: white;
+    -webkit-border-radius: 393px;
+    -moz-border-radius: 393px;
+    -ms-border-radius: 393px;
+    -o-border-radius: 393px;
+}
+
+.rsection-title {
+    background: linear-gradient(90deg, #FFFFFF80, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    width: 70%;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.rsection-text {
+    background: linear-gradient(90deg, #FFFFFF80, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 87%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.rsection-box {
+    display: flex;
+    text-align: center;
+    background: #54E7A9;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.rsectionimg {
+    border-radius: 30px;
+    padding: 20px;
+    width: 530px;
+    height: 530px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.value-box {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.value-btn {
+
+    display: inline-block;
+    align-items: center;
+    width: 120px;
+    padding: 12px;
+    border-radius: 1000px;
+    box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 40px 0;
+
+    &:hover {
+        background: #333;
+    }
+}
+
+.value-title {
+
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -1.92px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.value-text {
+    color: rgba(255, 255, 255, 0.751);
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.16px;
+}
+.team{
+    // background:red;
+    background: var(--color-black-solid, #000);
+    text-align: center;
+}
+.team-cards{
+    text-align: left;
+    padding: 20px 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+.team-btn{
+    display: inline-block;
+    align-items: center;
+    width: 120px;
+    padding: 12px;
+    border-radius: 1000px;
+    box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 40px 0;
+
+    &:hover {
+        background: #333;
+    }
+}
