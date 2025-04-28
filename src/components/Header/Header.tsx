@@ -1,5 +1,6 @@
 import { Globe } from 'lucide-react'
 import './Header.scss'
+import { NavLink } from 'react-router'
 const Header = () => {
     return (
         <header className="header">
@@ -10,24 +11,24 @@ const Header = () => {
                 <nav>
                     <ul className="header_container_list">
                         <li className="header_container_list_item">
-                            <a href="#features">
+                            <NavLink to="/features">
                                 Features
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#pricing">
+                            <NavLink to="/pricing">
                                 Pricing
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#about-us">
+                            <NavLink to="/about-us">
                                 About us
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#support">
+                            <NavLink to="/support">
                                 Support
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
