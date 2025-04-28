@@ -28,8 +28,13 @@
             display: block;
 
             .logo {
+                width: 44px;
+                height: 38px;
+                border-radius: 4px;
+
                 &:hover {
                     opacity: 0.9;
+
                 }
             }
         }
