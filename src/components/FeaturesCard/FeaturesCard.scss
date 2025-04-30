@@ -10,9 +10,13 @@
         background: rgb(39, 40, 41);
         box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07), inset 0px -2px 0px 0px rgb(104, 247, 187);
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
 
         &_body {
-            padding-top: 190px;
+            margin: 0;
 
             h1 {
                 background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
@@ -28,6 +32,9 @@
 
             &_box {
                 position: relative;
+                width: 100%;
+                height: 100%;
+
                 &_icon {
                     width: 176px;
                     height: 176px;
@@ -36,8 +43,10 @@
                     opacity: var(--opacity-25, 0.25);
                     background: var(--color-spring-green-69, #68F7BB);
                     filter: blur(40px);
-                    margin-left: auto;
+                    position: absolute;
+                    right: 0;
                 }
+
                 img {
                     position: absolute;
                     top: 24px;
@@ -58,11 +67,16 @@
 
     &_item:first-child,
     &_item:nth-child(4) {
-        width: calc(55% - 10px);
+        width: calc(60% - 10px);
+        height: 520px;
+        .features_cards_item_body {
+            max-width: 50%;
+        }
     }
 
     &_item:nth-child(2),
     &_item:nth-child(3) {
         width: calc(40% - 10px);
+        height: 520px;
     }
 }

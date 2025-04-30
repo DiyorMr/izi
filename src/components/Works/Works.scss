@@ -35,7 +35,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 20px #00ffcc;
+            box-shadow: 0 0 40px #00ffcc;
         }
 
 
@@ -98,7 +98,7 @@
         }
 
         &:nth-child(4) {
-            margin-bottom: 100px;
+            margin-bottom: 80px;
         }
     }
 
@@ -109,7 +109,7 @@
         .icon {
             width: 69px;
             height: 69px;
-            margin-right: 52px;
+            margin-right: 152px;
 
             img {
                 width: 37px;
@@ -164,6 +164,7 @@
         .icon {
             width: 105px;
             height: 105px;
+            margin-right: 0;
 
             img {
                 width: 64px;
@@ -175,8 +176,8 @@
             margin-top: 79px;
         }
 
-        margin-top: 310px;
-        padding-right: 50px;
+        margin-top: 280px;
+        padding-right: 70px;
         align-items: flex-end;
     }
 }

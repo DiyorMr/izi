@@ -22,7 +22,6 @@ const LeaderSlider = () => {
       }}
       allowTouchMove={false}
       modules={[Autoplay]}
-      className="mySwiper"
     >
       <SwiperSlide>
         <SlideItem image="/images/leader-one.svg" />

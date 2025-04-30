@@ -11,7 +11,7 @@ import SlideItem from "../SliderItem";
 const PartnerSlider = () => {
   return (
     <Swiper
-      slidesPerView={7}
+      slidesPerView={5}
       loop={true}
       speed={5000}
       autoplay={{
@@ -23,28 +23,28 @@ const PartnerSlider = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <SlideItem image="/images/item1.svg" />
+        <SlideItem image="/images/slider1.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/item2.svg" />
+        <SlideItem image="/images/slider2.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/item3.svg" />
+        <SlideItem image="/images/slider3.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/item4.svg" />
+        <SlideItem image="/images/slider4.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/item5.svg" />
+        <SlideItem image="/images/slider1.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/item6.svg" />
+        <SlideItem image="/images/slider2.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/item7.svg" />
+        <SlideItem image="/images/slider3.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/item8.svg" />
+        <SlideItem image="/images/slider4.jpg" title="AimLab" />
       </SwiperSlide>
     </Swiper>
   );

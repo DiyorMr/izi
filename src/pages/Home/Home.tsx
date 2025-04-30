@@ -18,7 +18,7 @@ const Home = () => {
             {/* Hero section */}
             <section className="hero container" id='hero'>
                 <div className="hero_badge">
-                    <Sparkles />
+                    <Sparkles className='icon' />
                     Smart Financial Assistant
                 </div>
                 <h1 className="hero_title">
@@ -46,7 +46,7 @@ const Home = () => {
             {/* Features section */}
             <section className="features container" id='features'>
                 <div className="tag">
-                    <Component />
+                    <Component className='icon' />
                     KEY FEATURES
                 </div>
                 <h1>
@@ -71,7 +71,7 @@ const Home = () => {
             {/* Benefit section */}
             <section className="benefits container" id='benefits'>
                 <div className="benefits_button">
-                    <ShieldCheck />
+                    <ShieldCheck className='icon' />
                     Benefits
                 </div>
                 <h2 className="benefits_title">Reap the Rewards<br />of Using Penny</h2>
