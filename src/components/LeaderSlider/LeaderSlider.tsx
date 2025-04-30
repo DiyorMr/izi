@@ -13,7 +13,7 @@ const LeaderSlider = () => {
     <div className="leader-box">
         <h2  className="leader-title">We work with the industry leaders</h2>
         <Swiper
-      slidesPerView={7}
+      slidesPerView={4}
       loop={true}
       speed={5000}
       autoplay={{
@@ -25,29 +25,17 @@ const LeaderSlider = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <SlideItem image="/images/leader-one.svg" />
+        <SlideItem image="/images/leader-one.jpg" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/leader-two.svg" />
+        <SlideItem image="/images/leader-two.jpg" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/leader-three.svg" />
+        <SlideItem image="/images/leader-three.jpg" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/leader-four.svg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SlideItem image="/images/leader-five.svg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SlideItem image="/images/leader-six.svg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SlideItem image="/images/leader-seven.svg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SlideItem image="/images/leader-eight.svg" />
-      </SwiperSlide>
+        <SlideItem image="/images/leader-four.jpg" />
+      </SwiperSlide> 
     </Swiper>
     </div>
   );

@@ -67,7 +67,7 @@ export const teamCardData = [
     },
     {
         title: 'Abdullaziz Mansurov',
-        text: 'product owner',
+        text: 'Product owner',
         img: teamtwo
     },
     {
@@ -77,7 +77,7 @@ export const teamCardData = [
     },
     {
         title: 'Abzalhon',
-        text: 'technical support',
+        text: 'Technical support',
         img: teamfour
     },
     {
@@ -87,7 +87,7 @@ export const teamCardData = [
     },
     {
         title: 'Javlon',
-        text: 'ml engineer',
+        text: 'Ml engineer',
         img: teamsix
     },
    
