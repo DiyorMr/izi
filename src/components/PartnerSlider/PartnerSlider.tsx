@@ -23,25 +23,25 @@ const PartnerSlider = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <SlideItem image="/images/slider1.jpg" title="AimLab" />
+        <SlideItem image="/images/slider1.jpg" title="We Digital" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/slider2.jpg" title="AimLab" />
+        <SlideItem image="/images/slider2.jpg" title="Alpha" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/slider3.jpg" title="AimLab" />
+        <SlideItem image="/images/slider3.jpg" title="Osnova" />
       </SwiperSlide>
       <SwiperSlide>
         <SlideItem image="/images/slider4.jpg" title="AimLab" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/slider1.jpg" title="AimLab" />
+        <SlideItem image="/images/slider1.jpg" title="We Digital" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/slider2.jpg" title="AimLab" />
+        <SlideItem image="/images/slider2.jpg" title="Alpha" />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideItem image="/images/slider3.jpg" title="AimLab" />
+        <SlideItem image="/images/slider3.jpg" title="Osnova" />
       </SwiperSlide>
       <SwiperSlide>
         <SlideItem image="/images/slider4.jpg" title="AimLab" />

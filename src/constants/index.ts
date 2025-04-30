@@ -66,7 +66,7 @@ export const plansData = [
             'Custom Savings Goals with Tracker',
             'Priority Chat Support'
         ],
-        highlight: true,
+        highlight: false,
     },
     {
         title: 'Basic',

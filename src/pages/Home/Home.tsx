@@ -32,8 +32,8 @@ const Home = () => {
                     and investing with personalized support.
                 </p>
                 <div className="hero_buttons">
-                    <button className="success">Get Started</button>
-                    <button className="secondary">Key Features</button>
+                    <a href="/get-started" className="success">Get Started</a>
+                    <a href="/features" className="secondary">Key Features</a>
                 </div>
             </section>
             {/* Slider section */}
@@ -54,7 +54,7 @@ const Home = () => {
                     <br />
                     <span>Simplify Finance</span>
                 </h1>
-                <button className="btn">WHAT OTHERS SAY</button>
+                <a href="/testimonials" className="btn">WHAT OTHERS SAY</a>
                 <div className='features_cards'>
                     {
                         featuresCardData?.map((item, index) =>
@@ -118,7 +118,6 @@ const Home = () => {
                 <Support />
             </section>
             {/* Footer section */}
-
             <Footer />
         </>
     )

@@ -62,7 +62,7 @@
         gap: 16px;
         justify-content: center;
 
-        button {
+        a {
             width: 127.2px;
             height: 48.39px;
             box-sizing: border-box;
@@ -77,6 +77,9 @@
             text-transform: uppercase;
             margin-top: 32px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &.success {
                 background-color: #21f3a8;
@@ -137,6 +140,7 @@
         display: inline-block;
         display: flex;
         align-items: center;
+        width: 136px;
         gap: 8px;
         padding: 9px;
         border-radius: 1000px;
@@ -151,7 +155,6 @@
         text-align: left;
         text-transform: uppercase;
         margin-top: 80px;
-        margin-left: 8px;
 
         .icon {
             width: 12px;
@@ -296,10 +299,6 @@
         text-align: center;
         text-transform: uppercase;
 
-        &:hover {
-            opacity: 0.9;
-        }
-
         .icon {
             border-radius: 50%;
             width: 18px;
@@ -397,10 +396,6 @@
             background: linear-gradient(270deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
             margin: 0 auto;
 
-            &:hover {
-                opacity: 0.9;
-            }
-
             h1 {
                 background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
                 -webkit-background-clip: text;
@@ -441,10 +436,6 @@
         backdrop-filter: blur(5px);
         background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
         overflow: hidden;
-
-        &:hover {
-            opacity: 0.9;
-        }
     }
 
     h1 {

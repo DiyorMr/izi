@@ -11,14 +11,11 @@ const Header = () => {
                 <nav>
                     <ul className="header_container_list">
                         <li className="header_container_list_item">
-                            <NavLink to="/features">
-                                Features
-                            </NavLink>
+                            <a href="#features">Features</a>
                         </li>
                         <li className="header_container_list_item_link">
-                            <NavLink to="/pricing">
-                                Pricing
-                            </NavLink>
+                            <a href="#pricing">Pricing</a>
+
                         </li>
                         <li className="header_container_list_item_link">
                             <NavLink to="/about-us">
@@ -26,16 +23,14 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li className="header_container_list_item_link">
-                            <NavLink to="/support">
-                                Support
-                            </NavLink>
+                            <a href="#support">Support</a>
                         </li>
                     </ul>
                 </nav>
                 <div className="header_container_actions">
                     <Globe className="header_container_actions_lang" />
-                    <button className="login">Log In</button>
-                    <button className="get-started">Get Started</button>
+                    <a href="/login" className="login">Log In</a>
+                    <a href="/get-started" className="get-started">Get Started</a>
                 </div>
             </div>
         </header>

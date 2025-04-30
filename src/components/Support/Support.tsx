@@ -13,11 +13,12 @@ const Support = () => {
                             <h3>{item.title}</h3>
                             <p>{item.text}</p>
                             <button>{item.btn}</button>
+                            {/* <a className='button' href='https://t.me/AIMLab_Support'>{item.btn}</a> */}
                         </div>
                     )
                 }
-
             </section>
+
             <section className="contact_forms">
                 <img src="/images/supbacg.svg" alt="bg-image" />
                 <div className="contact-form">

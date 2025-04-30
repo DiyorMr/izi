@@ -36,8 +36,8 @@ const Customers = () => {
                     Financial Revolution!
                 </div>
                 <div className="customer_cta_buttons">
-                    <button className="primary">Get Started</button>
-                    <button className="secondary">Get Support</button>
+                    <a href="/get-started" className="primary">Get Started</a>
+                    <a href="/support" className="secondary">Get Support</a>
                 </div>
             </div>
 

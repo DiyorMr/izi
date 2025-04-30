@@ -1,25 +1,48 @@
-import "./Pricing.scss"
+import React, { useState } from "react";
+import "./Pricing.scss";
 import { infoBasic, infoData, infoPremium, plansData } from "@/constants";
-const Pricing = () => {
+
+const Pricing: React.FC = () => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+    const handleCardClick = (index: number) => {
+        setActiveIndex(index);
+        console.log(`Plan selected: ${plansData[index].title}`);
+    };
+
     return (
         <>
             <div className="pricings">
-                {plansData.map((plan, index) => (
-                    <div className={`card ${plan.highlight ? 'highlight' : ''}`} key={index}>
-                        <div className="card__title">{plan.title}</div>
-                        <div className="card__price">
-                            {plan.price} {plan.period && <span className="card__period">{plan.period}</span>}
+                <div className="pricing">
+                    {plansData.map((plan, index) => (
+                        <div
+                            key={index}
+                            className={`card ${plan.highlight ? "highlight" : ""} ${activeIndex === index ? "active" : ""}`}
+                            onClick={() => handleCardClick(index)}
+                        >
+                            <div className="card__title">{plan.title}</div>
+                            <div className="card__price">
+                                {plan.price}
+                                {plan.period && <span className="card__period">{plan.period}</span>}
+                            </div>
+                            <p className="card__desc">
+                                Ideal for individuals looking to manage their finances
+                            </p>
+                            <ul className="card__features">
+                                {plan.features.map((item: string, i: number) => (
+                                    <li key={i}>
+                                        <span>✔</span> {item}
+                                    </li>
+                                ))}
+                            </ul>
+                            <a className="card__button">
+                                GET STARTED
+                            </a>
                         </div>
-                        <p className="card__desc">Ideal for individuals looking to manage their finances</p>
-                        <ul className="card__features">
-                            {plan.features.map((item, i) => (
-                                <li key={i}><span>✔</span> {item}</li>
-                            ))}
-                        </ul>
-                        <button className="card__button">GET STARTED</button>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
+
             <div className="pricing_info">
                 <div className="pricing_info_plans">
                     <h2 className="pricing_info_plans_title">Explore Our Plans and
@@ -33,9 +56,12 @@ const Pricing = () => {
                         )
                     }
                 </div>
+
                 <div className="pricing_info_basic">
                     <h2 className="pricing_info_basic_title">Basic</h2>
                     <button className="pricing_info_basic_btn">Get Started</button>
+                    {/* <a href="/get-started" className="pricing_info_basic_a">Get Started</a> */}
+
                     {
                         infoBasic.map((item, index) =>
                             <div className="pricing_info_plans_text" key={index}>
@@ -65,8 +91,8 @@ const Pricing = () => {
                 </div>
             </div>
         </>
+    );
+};
 
-    )
-}
+export default Pricing;
 
-export default Pricing

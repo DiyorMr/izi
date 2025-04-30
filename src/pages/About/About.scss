@@ -242,21 +242,24 @@
     line-height: 28px;
     letter-spacing: -0.16px;
 }
-.team{
+
+.team {
     // background:red;
     background: var(--color-black-solid, #000);
     text-align: center;
     margin-bottom: 170px;
 }
-.team-cards{
+
+.team-cards {
     text-align: left;
     padding: 20px 0;
-display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.team-btn{
+
+.team-btn {
     display: inline-block;
     align-items: center;
     width: 120px;
