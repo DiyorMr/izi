@@ -1,9 +1,10 @@
 .value_cards {
     display: flex;
     flex-wrap: wrap;
+  justify-content: center;
     margin-top: 80px;
     margin-bottom: 30px;
-    gap: 20px;
+    gap: 40px;
 
     &_item {
         border-radius: 20px;
@@ -60,11 +61,13 @@
 
     &_item:first-child,
     &_item:nth-child(4) {
-        width: 45%;
+        width: 551px;
+        
     }
 
     &_item:nth-child(2),
     &_item:nth-child(3) {
-        width: 45%;
+        width: 551px;
+        
     }
 }

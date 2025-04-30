@@ -1,4 +1,4 @@
-import Header from '@/components/Header'
+import { Fragment } from 'react'
 import './Home.scss'
 import { BadgeDollarSign, BadgeHelp, Component, Headset, MessageSquareText, ShieldCheck, Sparkles } from 'lucide-react'
 import PartnerSlider from '@/components/PartnerSlider'
@@ -8,13 +8,11 @@ import Customers from '@/components/Customers'
 import Pricing from '@/components/Pricing'
 import Faq from '@/components/Faq'
 import Support from '@/components/Support'
-import Footer from '@/components/Footer'
 import { featuresCardData } from '@/constants'
 import FeaturesCard from '@/components/FeaturesCard'
 const Home = () => {
     return (
-        <>
-            <Header />
+        <Fragment>
             {/* Hero section */}
             <section className="hero container" id='hero'>
                 <div className="hero_badge">
@@ -117,9 +115,7 @@ const Home = () => {
                     Anytime You Need</h1>
                 <Support />
             </section>
-            {/* Footer section */}
-            <Footer />
-        </>
+        </Fragment>
     )
 }
 

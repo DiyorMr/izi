@@ -1,19 +1,14 @@
 import "./About.scss"
 import btnimg from "../../../public/images/btn-img.svg"
 import sectionimg from '../../../public/images/sectionimg.png'
-import LeaderSlider from "@/components/LeaderSlider"
-import { teamCardData, valueCardData } from "@/index"
-import ValueCard from "@/components/ValueCard"
+import LeaderSlider from "@/components/LeaderSlider/LeaderSlider"
+import ValueCard from "@/components/ValueCard/ValueCard"
 import TeamCard from "@/components/TeamCard/TeamCard"
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import { teamCardData, valueCardData } from "@/index"
 
 const About = () => {
     return (
         <div>
-            <div className="rcontainer">
-                <Header/>
-            </div>
             <div className='rheader'>
                 <div className="rcontainer">
                     <div className="rheader-content">
@@ -92,9 +87,6 @@ const About = () => {
                         }
                     </div>
                 </div>
-            </div>
-            <div className="rcontainer">
-                <Footer/>
             </div>
 
         </div>
