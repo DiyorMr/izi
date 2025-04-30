@@ -3,7 +3,6 @@
     .pricing {
         display: flex;
         justify-content: center;
-        gap: 20px;
         padding: 40px 20px;
         background-color: #000;
         flex-wrap: wrap;
@@ -140,6 +139,8 @@
     padding: 0 24px;
 
     &_plans {
+        display: flex;
+        flex-direction: column;
         &_title {
             background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
             -webkit-background-clip: text;
@@ -151,12 +152,14 @@
             letter-spacing: -0.72px;
             text-align: left;
             width: 360px;
+            margin-bottom: 8px;
         }
 
         &_text {
-            margin-top: 80px;
-            text-align: center;
-
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
 
             p {
                 color: rgb(255, 255, 255);
@@ -170,6 +173,8 @@
     }
 
     &_basic {
+        display: flex;
+        flex-direction: column;
         &_title {
             background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
             -webkit-background-clip: text;
@@ -180,9 +185,13 @@
             line-height: 24.96px;
             letter-spacing: -0.72px;
             text-align: left;
+            margin-bottom: 0;
         }
 
         &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 338.67px;
             height: 37.39px;
             border-radius: 8px;
@@ -202,9 +211,24 @@
             }
 
         }
+        &_text {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.92px;
+                letter-spacing: 0.14px;
+            }
+        }
     }
 
     &_premium {
+        display: flex;
+        flex-direction: column;
         &_title {
             background: linear-gradient(-28.71deg, rgb(0, 163, 96), rgb(104, 247, 187));
             -webkit-background-clip: text;
@@ -218,6 +242,9 @@
         }
 
         &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 338.67px;
             height: 37.39px;
             border-radius: 8px;
@@ -236,6 +263,19 @@
                 opacity: 0.9;
             }
 
+        }
+        &_text {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.92px;
+                letter-spacing: 0.14px;
+            }
         }
     }
 }

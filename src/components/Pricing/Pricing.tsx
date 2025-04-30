@@ -59,12 +59,11 @@ const Pricing: React.FC = () => {
 
                 <div className="pricing_info_basic">
                     <h2 className="pricing_info_basic_title">Basic</h2>
-                    <button className="pricing_info_basic_btn">Get Started</button>
-                    {/* <a href="/get-started" className="pricing_info_basic_a">Get Started</a> */}
+                    <a href="#" className="pricing_info_basic_btn">Get Started</a>
 
                     {
                         infoBasic.map((item, index) =>
-                            <div className="pricing_info_plans_text" key={index}>
+                            <div className="pricing_info_basic_text" key={index}>
                                 {item?.name ?
                                     <p>{item.name}</p>
                                     :
@@ -76,10 +75,11 @@ const Pricing: React.FC = () => {
                 </div>
                 <div className="pricing_info_premium">
                     <h2 className="pricing_info_premium_title">Premium</h2>
-                    <button className="pricing_info_premium_btn">Get Started</button>
+                    <a href="#" className="pricing_info_premium_btn">Get Started</a>
+
                     {
                         infoPremium.map((item, index) =>
-                            <div className="pricing_info_plans_text" key={index}>
+                            <div className="pricing_info_premium_text" key={index}>
                                 {item?.name ?
                                     <p>{item.name}</p>
                                     :
