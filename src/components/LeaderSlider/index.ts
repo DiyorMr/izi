@@ -1,1 +1,1 @@
-export { default } from "./LeaderSlider";
+export { default as LeaderSlider } from "./LeaderSlider";

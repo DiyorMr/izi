@@ -2,9 +2,9 @@ import "./About.scss"
 import btnimg from "../../../public/images/btn-img.svg"
 import sectionimg from '../../../public/images/sectionimg.png'
 import { teamCardData, valueCardData } from "@/index"
-import ValueCard from "@/components/ValueCard/index"
-import LeaderSlider from "@/components/LeaderSlider/index"
 import TeamCard from "@/components/TeamCard/TeamCard"
+import { LeaderSlider } from "@/components/LeaderSlider"
+import { ValueCard } from "@/components/ValueCard"
 
 const About = () => {
     return (

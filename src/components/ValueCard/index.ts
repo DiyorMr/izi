@@ -1,1 +1,1 @@
-export { default } from "./ValueCard"
+export { default as ValueCard } from "./ValueCard"
