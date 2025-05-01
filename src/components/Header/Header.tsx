@@ -29,8 +29,8 @@ const Header = () => {
                 </nav>
                 <div className="header_container_actions">
                     <Globe className="header_container_actions_lang" />
-                    <a href="/login" className="login">Log In</a>
-                    <a href="/get-started" className="get-started">Get Started</a>
+                    <a href="#" className="login">Log In</a>
+                    <a href="#" className="get-started">Get Started</a>
                 </div>
             </div>
         </header>

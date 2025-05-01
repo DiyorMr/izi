@@ -27,15 +27,15 @@ const Footer = () => {
                     <div className="footer_content_columns_column">
                         <h4>LEGAL</h4>
                         <ul>
-                            <li><a href="https://www.privacypolicygenerator.info/">Privacy Policy</a></li>
-                            <li><a href="https://policies.google.com/">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
                         </ul>
 
                     </div>
                     <div className="footer_content_columns_cta">
                         <h3>Become Part of Our Financial Revolution!</h3>
-                        <a href="/get-started" className="btn green">GET STARTED</a>
-                        <a href="/support" className="btn dark">GET SUPPORT</a>
+                        <a href="#" className="btn green">GET STARTED</a>
+                        <a href="#" className="btn dark">GET SUPPORT</a>
                     </div>
                 </div>
             </div>

@@ -30,8 +30,8 @@ const Home = () => {
                     and investing with personalized support.
                 </p>
                 <div className="hero_buttons">
-                    <a href="/get-started" className="success">Get Started</a>
-                    <a href="/features" className="secondary">Key Features</a>
+                    <a href="#" className="success">Get Started</a>
+                    <a href="#" className="secondary">Key Features</a>
                 </div>
             </section>
             {/* Slider section */}
@@ -52,7 +52,7 @@ const Home = () => {
                     <br />
                     <span>Simplify Finance</span>
                 </h1>
-                <a href="/testimonials" className="btn">WHAT OTHERS SAY</a>
+                <a href="#" className="btn">WHAT OTHERS SAY</a>
                 <div className='features_cards'>
                     {
                         featuresCardData?.map((item, index) =>
