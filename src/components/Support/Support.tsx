@@ -12,8 +12,13 @@ const Support = () => {
                             <img src={item.img} className='icon' alt="" />
                             <h3>{item.title}</h3>
                             <p>{item.text}</p>
-                            <button>{item.btn}</button>
-                            {/* <a className='button' href='https://t.me/AIMLab_Support'>{item.btn}</a> */}
+                            <a
+                                className='button'
+                                href='https://t.me/AIMLab_Support'
+                                target='_blank'
+                                >
+                                {item.btn}
+                            </a>
                         </div>
                     )
                 }
