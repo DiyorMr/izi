@@ -1,43 +1,54 @@
 .team-box {
-//    border:1px solid red;
+   //border:1px solid red;
    width: 267px;
-   
-  }
+   //border:1px solid red;
+   border-top-right-radius:34px ;
+   border-top-left-radius: 34px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   padding-bottom: 6px ;
+   background-color: rgba(48, 47, 47, 0.219);
+   backdrop-filter: blur(8px);
   
-  
-  .icon-box {
-    border:2px solid rgb(50, 207, 50);
-    border-bottom: 4px solid rgb(50, 207, 50);
-    width: 266px;
-    height: 304px;
-    border-radius: 34px;
-    background: url('path-to-image') rgba(211, 211, 211, 0.051) -107px 0px / 153.383% 129.936% no-repeat;
-    -webkit-border-radius: 34px;
-    -moz-border-radius: 34px;
-    -ms-border-radius: 34px;
-    -o-border-radius: 34px;
 }
-
+    
+    
+    .icon-box {
+      border:1px solid rgb(50, 207, 50);
+      border-bottom: 4px solid rgb(50, 207, 50);
+      width: 266px;
+      height: 304px;
+      border-radius: 34px;
+      background: transparent;
+      -webkit-border-radius: 34px;
+      -moz-border-radius: 34px;
+      -ms-border-radius: 34px;
+      -o-border-radius: 34px;
+}
   
-  .team-box-title {
-    color: #fffffff1;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #cac1c1b9;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    
+    .team-box-title {
+      padding-left: 5px;
+      color: #fffffff1;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #cac1c1b9;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 180% */
+      margin-bottom: 8px;
+    }
+    
+    .team-box-text {
+      padding-left: 5px;
+      color: #AAAAAA;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #c3b7b7;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 180% */
-  }
-  
-  .team-box-text {
-    color: #AAAAAA;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #c3b7b7;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 24px; /* 180% */
-  }
-  
+    font-weight: 400;
+    line-height: 24px; /* 180% */
+    }
+    

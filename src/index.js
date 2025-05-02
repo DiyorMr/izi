@@ -61,7 +61,7 @@ export const valueCardData = [
 ]
 export const teamCardData = [
     {
-        title: 'Behzod aka',
+        title: 'Behzod Ismoilov ',
         text: 'CEO',
         img: teamone
     },
@@ -71,29 +71,29 @@ export const teamCardData = [
         img: teamtwo
     },
     {
-        title: 'Sherbek',
+        title: 'Sherbek Ergashev',
         text: 'Graphic designer',
         img: teamthree
     },
     {
-        title: 'Abzalhon',
-        text: 'technical support',
+        title: 'Abzal Akramov',
+        text: 'Mobile Developer',
         img: teamfour
     },
     {
         title: 'Jalolov Omadbek',
-        text: 'Head of design',
+        text: 'UI/UX Designer',
         img: teamfive
     },
     {
-        title: 'Javlon',
-        text: 'ml engineer',
+        title: 'Javlon Valiev',
+        text: 'Data Science',
         img: teamsix
     },
    
     {
-        title: 'Husniddin',
-        text: 'Backend developer',
+        title: 'Husniddin Ravshanov',
+        text: 'Software Engineer',
         img: teamseven
     },
     {

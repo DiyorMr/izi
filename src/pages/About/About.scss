@@ -1,21 +1,32 @@
 * {
     box-sizing: border-box;
-    // margin: 0 auto;
 }
 
 .rcontainer {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     width: 100%;
     // border: 1px solid red;
 }
 
 .rheader {
-    background-image: url(../../../public/images/headerbg.png);
+    // border:1px solid red;
+    background-image: url(../../../public/images/izi.svg);
     background-size: cover;
-    height: 728px;
+    width: 100%;
+    background-repeat:no-repeat;
+    height: auto;
+  
+    
+}
+.box-header{
     display: flex;
     align-items: center;
+    height: 620.5px;
+}
+.rheader-content{
+    margin-bottom: 100px;
+    // border:1px solid red;
 }
 
 .rheader-box {
@@ -221,10 +232,6 @@
     text-transform: uppercase;
     cursor: pointer;
         margin-bottom: 48px;
-
-    &:hover {
-        background: #333;
-    }
 }
 
 .value-title {
@@ -269,6 +276,7 @@
     justify-content: center;
     gap: 23px;
     flex-wrap: wrap;
+    margin-bottom: 200px;
 }
 
 .team-btn {
@@ -290,7 +298,5 @@
     cursor: pointer;
     margin: 40px 0;
 
-    &:hover {
-        background: #333;
-    }
+
 }

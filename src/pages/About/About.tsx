@@ -10,12 +10,15 @@ const About = () => {
     return (
         <div>
             <div className='rheader'>
+            <div className="box-header">
                 <div className="rcontainer">
                     <div className="rheader-content">
-                        <div className='rheader-box'><img className="rheader-img" src={btnimg} alt="" /> <h3 className='rheader-box-title'>SMART FINANCIAL ASSISTANT</h3></div>
+                    
+                      <div className='rheader-box'><img className="rheader-img" src={btnimg} alt="" /> <h3 className='rheader-box-title'>SMART FINANCIAL ASSISTANT</h3></div>
                         <h2 className='rheader-title'>About IZI ish</h2>
                         <p className='rheader-text'>Penny is your friendly AI chatbot, simplifying budgeting,  saving, and investing with personalized support.</p>
                     </div>
+                      </div>
                 </div>
 
             </div>
