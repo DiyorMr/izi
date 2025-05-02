@@ -15,13 +15,15 @@ const LeaderSlider = () => {
       <h2 className="leader-title">We work with the industry leaders</h2>
     <div className="box-leader">
     <Swiper
-        slidesPerView={4}
+        slidesPerView={5}
         loop={true}
         speed={5000}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
+          
         }}
+        loopAdditionalSlides={5}
         allowTouchMove={false}
         modules={[Autoplay]}
       >
