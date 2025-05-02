@@ -1,7 +1,11 @@
 import { Globe } from 'lucide-react'
 import './Header.scss'
-import { NavLink } from 'react-router'
+import { NavLink, useLocation, useNavigate } from 'react-router'
 const Header = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+    const pathname = location.pathname
+    const isAbout = pathname === '/about-us';
     return (
         <header className="header">
             <div className="header_container">
@@ -11,10 +15,10 @@ const Header = () => {
                 <nav>
                     <ul className="header_container_list">
                         <li className="header_container_list_item">
-                            <a href="#features">Features</a>
+                            <a href="#features" onClick={() => isAbout && navigate('/#features')}>Features</a>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#pricing">Pricing</a>
+                            <a href="#pricing" onClick={() => isAbout && navigate('/#pricing')}>Pricing</a>
 
                         </li>
                         <li className="header_container_list_item_link">
@@ -23,7 +27,7 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li className="header_container_list_item_link">
-                            <a href="#support">Support</a>
+                            <a href="#support" onClick={() => isAbout && navigate('/#support')}>Support</a>
                         </li>
                     </ul>
                 </nav>

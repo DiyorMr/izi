@@ -1,7 +1,6 @@
 .benefits-stats {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0 0;
+    justify-content: space-between;
 
     .stat {
         width: 33.3%;
@@ -100,7 +99,8 @@
             letter-spacing: -0.96px;
             text-align: left;
         }
-        .content-box{
+
+        .content-box {
             display: flex;
             flex-direction: column;
             gap: 30px;

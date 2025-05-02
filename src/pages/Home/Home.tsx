@@ -15,23 +15,29 @@ const Home = () => {
         <Fragment>
             {/* Hero section */}
             <section className="hero container" id='hero'>
-                <div className="hero_badge">
-                    <Sparkles className='icon' />
-                    Smart Financial Assistant
+                <img src="/images/headerbg.png" alt="izi" />
+                <div className="hero_bg_box">
+                    <img src="/images/hero-bg-box.svg" alt="bg-box" />
                 </div>
-                <h1 className="hero_title">
-                    Your Personal
-                    <br />
-                    Finance Expert
-                </h1>
-                <p className="hero_description">
-                    Penny is your friendly AI chatbot, simplifying budgeting, saving,
-                    <br />
-                    and investing with personalized support.
-                </p>
-                <div className="hero_buttons">
-                    <a href="#" className="success">Get Started</a>
-                    <a href="#" className="secondary">Key Features</a>
+                <div className="hero_text_box">
+                    <div className="hero_badge">
+                        <Sparkles className='icon' />
+                        Smart Financial Assistant
+                    </div>
+                    <h1 className="hero_title">
+                        Your Personal
+                        <br />
+                        Finance Expert
+                    </h1>
+                    <p className="hero_description">
+                        Penny is your friendly AI chatbot, simplifying budgeting, saving,
+                        <br />
+                        and investing with personalized support.
+                    </p>
+                    <div className="hero_buttons">
+                        <a href="#" className="success">Get Started</a>
+                        <a href="#" className="secondary">Key Features</a>
+                    </div>
                 </div>
             </section>
             {/* Slider section */}
@@ -43,16 +49,24 @@ const Home = () => {
             </section>
             {/* Features section */}
             <section className="features container" id='features'>
-                <div className="tag">
-                    <Component className='icon' />
-                    KEY FEATURES
+                <div className='features_finans'>
+                    <div className='tags'>
+                        <div className="shadow_box"></div>
+                        <div className="tag">
+                            <Component className='icon' />
+                            KEY FEATURES
+                        </div>
+                        <div>
+                            <h1>
+                                Features That
+                                <br />
+                                <span>Simplify Finance</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <a href="#" className="btn">WHAT OTHERS SAY</a>
                 </div>
-                <h1>
-                    Features That
-                    <br />
-                    <span>Simplify Finance</span>
-                </h1>
-                <a href="#" className="btn">WHAT OTHERS SAY</a>
+
                 <div className='features_cards'>
                     {
                         featuresCardData?.map((item, index) =>
@@ -67,16 +81,19 @@ const Home = () => {
                 <Works />
             </section>
             {/* Benefit section */}
-            <section className="benefits container" id='benefits'>
-                <div className="benefits_button">
-                    <ShieldCheck className='icon' />
-                    Benefits
+            <section className="container" id='benefits'>
+                <div className="benefits">
+                    <div className="benefits_button">
+                        <ShieldCheck className='icon' />
+                        Benefits
+                    </div>
+                    <h2 className="benefits_title">Reap the Rewards<br />of Using Penny</h2>
+                    <Benefit />
                 </div>
-                <h2 className="benefits_title">Reap the Rewards<br />of Using Penny</h2>
-                <Benefit />
             </section>
             {/* Customers section */}
             <section className="customers container" id='customers'>
+                <div className="shadow_box"></div>
                 <button className="customers_button">
                     <MessageSquareText className='icon' />
                     Testimonials
@@ -86,14 +103,16 @@ const Home = () => {
             </section>
             {/* Pricing section */}
             <section className="pricing container" id='pricing'>
-                <button className="pricing_button">
+                <div className="shadow_box"></div>
+                <div className="pricing_button">
                     <BadgeDollarSign className='icon' />
-                    Pricing</button>
+                    Pricing</div>
                 <h2 className="pricing_title">Simple and<br />Affordable Plans</h2>
                 <Pricing />
             </section>
             {/* Faq section */}
             <section className="faq-section">
+            <div className="shadow_box"></div>
                 <div className="container">
                     <div className="faq">
                         <div className="faq_tag">
@@ -107,6 +126,8 @@ const Home = () => {
             </section>
             {/* Support section */}
             <section className="support container" id='support'>
+            <div className="shadow_box"></div>
+
                 <div className="support_section_tag">
                     <Headset />
                     Support

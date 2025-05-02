@@ -1,6 +1,5 @@
 .header {
-    width: 821px;
-    height: 52px;
+    max-width: 1250px;
     border-radius: 12px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -17,8 +16,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        max-width: 1170px;
         backdrop-filter: blur(20px);
         border-radius: 46px;
         background: linear-gradient(#ffffff00 99.99%, #cbcaca00);

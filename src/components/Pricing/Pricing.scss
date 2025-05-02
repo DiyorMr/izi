@@ -3,9 +3,8 @@
     .pricing {
         display: flex;
         justify-content: space-between;
-        padding: 40px 20px;
+        gap: 12px;
         background-color: #000;
-        flex-wrap: wrap;
 
         .card {
             box-shadow: inset 0px 0px 48px 0px rgba(255, 255, 255, 0.07), inset 0px -2px 0px 0px rgb(104, 247, 187);
@@ -13,7 +12,6 @@
             color: #fff;
             border-radius: 16px;
             padding: 24px;
-            width: 280px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -112,7 +110,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 216px;
                 height: 48.39px;
                 cursor: pointer;
                 border-radius: 12px;
@@ -136,13 +133,13 @@
     gap: 48px;
     margin-bottom: 80px;
     margin-top: 172px;
-    padding: 0 24px;
+    // padding: 0 24px;
 
     &_plans {
         display: flex;
         flex-direction: column;
 
-        &_title {
+       h2 {
             background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -176,7 +173,7 @@
         display: flex;
         flex-direction: column;
 
-        &_title {
+        h2 {
             background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -234,7 +231,7 @@
         display: flex;
         flex-direction: column;
 
-        &_title {
+        h2 {
             background: linear-gradient(-28.71deg, rgb(0, 163, 96), rgb(104, 247, 187));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
