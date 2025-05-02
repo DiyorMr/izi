@@ -4,7 +4,7 @@ import { About } from "./pages/About";
 const App = () => {
   return (
     <>
-      {/* <Home /> */}
+      <Home />
       <About/>
     </>
   );
