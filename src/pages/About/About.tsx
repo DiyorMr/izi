@@ -69,7 +69,6 @@ const About = () => {
                         <p className="value-text">Guiding Principles that Shape Our Vision</p>
                         <div className='value_cards'>
                             {
-                                
                                 valueCardData?.map((item, index) =>
                                     <ValueCard key={index} {...item} />
                                 )
