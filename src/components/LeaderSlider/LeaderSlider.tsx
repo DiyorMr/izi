@@ -13,7 +13,8 @@ const LeaderSlider = () => {
   return (
     <div className="leader-box">
       <h2 className="leader-title">We work with the industry leaders</h2>
-      <Swiper
+    <div className="box-leader">
+    <Swiper
         slidesPerView={4}
         loop={true}
         speed={5000}
@@ -53,6 +54,7 @@ const LeaderSlider = () => {
 
 
       </Swiper>
+    </div>
     </div>
   );
 };
