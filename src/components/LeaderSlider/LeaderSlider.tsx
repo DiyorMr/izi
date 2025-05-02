@@ -24,7 +24,6 @@ const LeaderSlider = () => {
         }}
         allowTouchMove={false}
         modules={[Autoplay]}
-        className="mySwiper"
       >
         <SwiperSlide>
           <LeaderItem image="/images/leader-one.jpg" title="WE DIGITAL" />

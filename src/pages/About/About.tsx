@@ -1,10 +1,10 @@
 import "./About.scss"
 import btnimg from "../../../public/images/btn-img.svg"
 import sectionimg from '../../../public/images/sectionimg.png'
+import { teamCardData, valueCardData } from "@/index"
+import TeamCard from "@/components/TeamCard/TeamCard"
 import LeaderSlider from "@/components/LeaderSlider/LeaderSlider"
 import ValueCard from "@/components/ValueCard/ValueCard"
-import { teamCardData, valueCardData } from "@/constants"
-import TeamCard from "@/components/TeamCard/TeamCard"
 
 const About = () => {
     return (

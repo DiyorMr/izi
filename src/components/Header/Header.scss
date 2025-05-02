@@ -1,6 +1,5 @@
 .header {
-    width: 821px;
-    height: 52px;
+    max-width: 1250px;
     border-radius: 12px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -17,8 +16,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        max-width: 1170px;
         backdrop-filter: blur(20px);
         border-radius: 46px;
         background: linear-gradient(#ffffff00 99.99%, #cbcaca00);
@@ -28,8 +25,13 @@
             display: block;
 
             .logo {
+                width: 44px;
+                height: 38px;
+                border-radius: 4px;
+
                 &:hover {
                     opacity: 0.9;
+
                 }
             }
         }
@@ -61,7 +63,7 @@
                 cursor: pointer;
             }
 
-            button {
+            a {
                 width: 80px;
                 height: 40px;
                 box-sizing: border-box;
@@ -76,6 +78,9 @@
                 text-align: center;
                 text-transform: uppercase;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
 
                 &.login {

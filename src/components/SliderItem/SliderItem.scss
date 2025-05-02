@@ -1,0 +1,14 @@
+.my_slider_item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &_img {
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 50%;
+    }
+    p{
+        text-transform: uppercase;
+    }
+}

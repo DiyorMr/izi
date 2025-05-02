@@ -2,18 +2,18 @@ import features_1 from '/images/vector1.svg'
 import features_2 from '/images/vector2.svg'
 import features_3 from '/images/vector3.svg'
 import features_4 from '/images/vector4.svg'
-import valueone from '../../public/images/value-one.svg'
-import valuetwo from '../../public/images/value-two.svg'
-import valuethree from '../../public/images/value-three.svg'
-import valuefour from '../../public/images/value-four.svg'
-import teamone from '../../public/images/team-one.png'
-import teamtwo from '../../public/images/team-two.png'
-import teamthree from '../../public/images/team-three.png'
-import teamfour from '../../public/images/team-four.png'
-import teamfive from '../../public/images/team-five.png'
-import teamsix from '../../public/images/team-six.png'
-import teamseven from '../../public/images/team-seven.png'
-import teameight from '../../public/images/team-eight.png'
+import valueone from './../public/images/value-one.svg'
+import valuetwo from './../public/images/value-two.svg'
+import valuethree from './../public/images/value-three.svg'
+import valuefour from './../public/images/value-four.svg'
+import teamone from './../public/images/team-one.png'
+import teamtwo from './../public/images/team-two.png'
+import teamthree from './../public/images/team-three.png'
+import teamfour from './../public/images/team-four.png'
+import teamfive from './../public/images/team-five.png'
+import teamsix from './../public/images/team-six.png'
+import teamseven from './../public/images/team-seven.png'
+import teameight from './../public/images/team-eight.png'
 export const featuresCardData = [
     {
         title: 'Financial Guidance',
@@ -67,7 +67,7 @@ export const teamCardData = [
     },
     {
         title: 'Abdullaziz Mansurov',
-        text: 'Product owner',
+        text: 'product owner',
         img: teamtwo
     },
     {

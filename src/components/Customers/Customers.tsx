@@ -1,71 +1,63 @@
-import { MessageSquareText } from 'lucide-react'
 import './Customers.scss'
 
 const Customers = () => {
     return (
-        <div className='container'>
-            <div className="testimonials_section">
-                <button className="testimonials_button">
-                    <MessageSquareText className='icon' />
-                    Testimonials</button>
-                <h2 className="testimonials_title">Why Customers<br />Love Penny</h2>
+        <div className="customer">
+            <div className="customer_top">
+                <div className="customer_top_video">
+                    <button className="customer_top_video_play_button">▶</button>
+                </div>
+                <div className="customer_side-cards">
+                    <div className="customer_card">
+                        <div>
+                            <img src="/images/patel.svg" alt="Liam Patel" className="customers__avatar" />
+                        </div>
+                        <div>
+                            <p className="customer_title">Liam Patel</p>
+                            <p className="customer_name">Finance Director</p>
+                        </div>
+                    </div>
+                    <div className="customer_card">
+                        <div>
+                            <img src="/images/patel.svg" alt="Liam Patel" className="customers__avatar" />
+                        </div>
+                        <div>
+                            <p className="customer_title">Liam Patel</p>
+                            <p className="customer_name">Finance Director</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="customers">
-                <div className="customers__top">
-                    <div className="customers__video">
-                        <button className="customers__play-button">▶</button>
-                    </div>
-                    <div className="customers__side-cards">
-                        <div className="customers__card">
-                            <div>
-                                <img src="/images/patel.svg" alt="Liam Patel" className="customers__avatar" />
-                            </div>
-                            <div>
-                                <p className="customers__title">Liam Patel</p>
-                                <p className="customers__name">Finance Director</p>
-                            </div>
-                        </div>
-                        <div className="customers__card">
-                            <div>
-                                <img src="/images/patel.svg" alt="Liam Patel" className="customers__avatar" />
-                            </div>
-                            <div>
-                                <p className="customers__title">Liam Patel</p>
-                                <p className="customers__name">Finance Director</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div className="customers__cta">
-                    <div className="customers__cta-text">
-                        <strong>Become Part of Our</strong><br />
-                        Financial Revolution!
-                    </div>
-                    <div className="customers__cta-buttons">
-                        <button className="primary">Get Started</button>
-                        <button className="secondary">Get Support</button>
-                    </div>
+            <div className="customer_cta">
+                <div className="customer_cta_text">
+                    <strong>Become Part of Our</strong>
+                    <br />
+                    Financial Revolution!
                 </div>
+                <div className="customer_cta_buttons">
+                    <a href="#" className="primary">Get Started</a>
+                    <a href="#" className="secondary">Get Support</a>
+                </div>
+            </div>
 
-                <div className="customers__testimonials">
-                    {Array(3).fill(0).map((_, i) => (
-                        <div className="customers__testimonial" key={i}>
-                            <p className="customers__quote">
-                                “Our financial team can now focus on higher-level strategic planning
-                                rather than getting bogged down by routine tasks and manual processes,
-                                leading to more impactful decision-making and improved business outcomes.”
-                            </p>
-                            <div className="customers__author">
-                                <img src="/images/oliwer.svg" alt="Oliver Lewis" className="customers__avatar" />
-                                <div>
-                                    <div className="customers__name">Oliver Lewis</div>
-                                    <div className="customers__title">Vice President of Finance</div>
-                                </div>
+            <div className="customer_testimonials">
+                {Array(3).fill(0).map((_, i) => (
+                    <div className="customer_testimonials_testimonial" key={i}>
+                        <p className="customer_testimonials_testimonial_quote">
+                            “Our financial team can now focus on higher-level strategic planning
+                            rather than getting bogged down by routine tasks and manual processes,
+                            leading to more impactful decision-making and improved business outcomes.”
+                        </p>
+                        <div className="customer_testimonials_testimonial_author">
+                            <img src="/images/oliwer.svg" alt="Oliver Lewis" className="customers__avatar" />
+                            <div>
+                                <div className="customer_name">Oliver Lewis</div>
+                                <div className="customer_title">Vice President of Finance</div>
                             </div>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
         </div>
 

@@ -1,54 +1,106 @@
-.faq-section {
-    background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 100%);
-    text-align: center;
-    color: white;
-    // margin-bottom: 152px;
-
-    .tag {
-        display: inline-block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    h1 {
-        background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 65.28px;
-        letter-spacing: -1.92px;
-        text-align: center;
-    }
-}
-
-.faq {
+.faq__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 60px 40px;
-    &_title {
+    margin-top: 20px;
+
+    &-title {
         font-size: 64px;
         font-weight: 500;
         line-height: 70.4px;
-        letter-spacing: 0%;
-        text-align: left;
-        margin-bottom: 4px;
+        text-align: center;
     }
 
-    &_text {
+    &-text {
         font-size: 18px;
         font-weight: 400;
         line-height: 21.6px;
-        letter-spacing: 0%;
-        text-align: left;
+        text-align: center;
     }
 
-    .collapse_box {
-        width: 530px;
+}
+
+.collapse_box {
+    width: 688px;
+    margin: 0 auto;
+
+    .tab {
+        position: relative;
+        border-radius: 32px;
+        padding: 21px 24px;
+        margin: 16px 0;
+        box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
+        background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05) 100%);
+    }
+
+    .tab input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .tab__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.35s;
+    }
+
+    .tab input:checked~.tab__content {
+        max-height: 10rem;
+    }
+
+    .tab__label,
+    .tab__close {
+        display: flex;
+        color: white;
+        background: var(--theme);
+        cursor: pointer;
+    }
+
+    .tab__label {
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-lg);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tab__label::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transform: rotate(90deg);
+        transition: all 0.35s;
+    }
+
+    .tab input:checked+.tab__label::after {
+        transform: rotate(270deg);
+    }
+
+    .tab__content p {
+        margin: 0;
+        margin-left: 1rem;
+        padding-top: 8px;
+        text-align: left;
+        color: white;
+
+    }
+
+    /* Arrow animation */
+    .tab input:not(:checked)+.tab__label:hover::after {
+        animation: bounce 0.5s infinite;
+    }
+
+    @keyframes bounce {
+        25% {
+            transform: rotate(90deg) translate(0.25rem);
+        }
+
+        75% {
+            transform: rotate(90deg) translate(-0.25rem);
+        }
     }
 }

@@ -1,12 +1,27 @@
-import Home from "./pages";
-import { About } from "./pages/About";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import { About, Home } from "./pages";
+import Layout from "./layout/Layout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:
+      <Layout>
+        <Home />
+      </Layout>,
+  },
+  {
+    path: "/about-us",
+    element:
+      <Layout>
+        <About />
+      </Layout>,
+  },
+]);
 
 const App = () => {
   return (
-    <>
-      <Home />
-      <About/>
-    </>
+    <RouterProvider router={router} />
   );
 };
 
