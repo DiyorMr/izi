@@ -494,6 +494,7 @@
 .support {
     background: #000; // qora fon
     color: white;
+    position: relative;
 
     .shadow_box {
         position: absolute;
@@ -504,6 +505,7 @@
         z-index: 11;
         background: var(--color-white-10, rgba(255, 255, 255, 0.10));
         filter: blur(50px);
+        top: -28px;
     }
 
     .support_section_tag {
