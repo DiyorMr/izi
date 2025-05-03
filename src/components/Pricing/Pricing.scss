@@ -15,7 +15,8 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-between;            
+            cursor: pointer;
 
             &:hover {
                 border-color: #00cc7a;
@@ -30,6 +31,10 @@
                 border-color: #00ffcc;
                 background: linear-gradient(145deg, #002b1e, #004d3d);
                 transform: scale(1.03);
+
+                .card__button {
+                    background: #00cc7a;
+                }
             }
 
             .card__title {
@@ -111,7 +116,6 @@
                 align-items: center;
                 justify-content: center;
                 height: 48.39px;
-                cursor: pointer;
                 border-radius: 12px;
                 box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
                 backdrop-filter: blur(5px);
@@ -120,6 +124,7 @@
                 &:hover {
                     background: #00cc7a;
                 }
+
             }
         }
     }
@@ -133,13 +138,12 @@
     gap: 48px;
     margin-bottom: 80px;
     margin-top: 172px;
-    // padding: 0 24px;
 
     &_plans {
         display: flex;
         flex-direction: column;
 
-       h2 {
+        h2 {
             background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

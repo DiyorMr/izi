@@ -66,7 +66,6 @@ const Home = () => {
                     </div>
                     <a href="#" className="btn">WHAT OTHERS SAY</a>
                 </div>
-
                 <div className='features_cards'>
                     {
                         featuresCardData?.map((item, index) =>
@@ -112,8 +111,8 @@ const Home = () => {
             </section>
             {/* Faq section */}
             <section className="faq-section">
-            <div className="shadow_box"></div>
                 <div className="container">
+                    <div className="shadow_box"></div>
                     <div className="faq">
                         <div className="faq_tag">
                             <BadgeHelp />
@@ -126,7 +125,7 @@ const Home = () => {
             </section>
             {/* Support section */}
             <section className="support container" id='support'>
-            <div className="shadow_box"></div>
+                <div className="shadow_box"></div>
 
                 <div className="support_section_tag">
                     <Headset />
