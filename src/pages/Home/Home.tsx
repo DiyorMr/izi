@@ -66,7 +66,6 @@ const Home = () => {
                     </div>
                     <a href="#" className="btn">WHAT OTHERS SAY</a>
                 </div>
-
                 <div className='features_cards'>
                     {
                         featuresCardData?.map((item, index) =>

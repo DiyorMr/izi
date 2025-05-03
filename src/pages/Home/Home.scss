@@ -122,7 +122,7 @@
         text-align: center;
         box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 23px 0;
+        padding: 24px 16px;
         border-radius: 24px;
         box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07), inset 0px -2px 0px 0px rgb(104, 247, 187);
         background: linear-gradient(270.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
@@ -135,8 +135,6 @@
             letter-spacing: 0%;
             text-align: center;
             text-transform: uppercase;
-
-
         }
     }
 }
@@ -168,7 +166,7 @@
                 border-radius: 180px;
                 z-index: 11;
                 background: var(--color-white-10, rgba(255, 255, 255, 0.10));
-                filter: blur(20px);
+                filter: blur(50px);
             }
 
             .tag {
@@ -311,7 +309,6 @@
     background: #000;
     text-align: center;
     color: #fff;
-    margin-bottom: 40px;
     position: relative;
 
     .shadow_box {
@@ -322,8 +319,9 @@
         border-radius: 180px;
         z-index: 1;
         background: var(--color-white-10, rgba(255, 255, 255, 0.10));
-        filter: blur(20px);
-        margin-left: 440px;
+        filter: blur(50px);
+        left: 35%;
+        top: -4%;
     }
 
     &_button {
@@ -346,7 +344,6 @@
         letter-spacing: 0%;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 40px;
 
         .icon {
             border-radius: 50%;
@@ -365,6 +362,7 @@
         line-height: 65.28px;
         letter-spacing: -1.92px;
         text-align: center;
+        padding-top: 10px;
     }
 }
 
@@ -373,20 +371,21 @@
     background: #000;
     text-align: center;
     color: #fff;
-    margin-top: 120px;
+    margin-top: 140px;
     position: relative;
 
 
     .shadow_box {
         position: absolute;
-        width: 340px;
-        height: 300px;
+        width: 360px;
+        height: 360px;
         flex-shrink: 0;
         border-radius: 180px;
         z-index: 1;
         background: var(--color-white-10, rgba(255, 255, 255, 0.10));
-        filter: blur(20px);
-        margin-left: 440px;
+        filter: blur(50px);
+        left: 35%;
+        top: -3%;
     }
 
     &_button {
@@ -394,9 +393,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 80px auto 10px;
         gap: 8px;
-        max-width: 140px;
-        padding: 9px 15px;
+        width: 140px;
+        padding: 9px;
         border-radius: 1000px;
         box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(5px);
@@ -408,7 +408,6 @@
         letter-spacing: 0%;
         text-align: center;
         text-transform: uppercase;
-        margin: 80px 0 0 550px;
 
 
         .icon {
@@ -438,22 +437,24 @@
     text-align: center;
     color: white;
     padding: 64px 16px;
+    position: relative;
 
     .shadow_box {
         position: absolute;
-        width: 340px;
-        height: 300px;
+        width: 360px;
+        height: 360px;
         flex-shrink: 0;
         border-radius: 180px;
         z-index: 1;
         background: var(--color-white-10, rgba(255, 255, 255, 0.10));
-        filter: blur(20px);
-        margin-left: 448px;
+        filter: blur(70px);
+        left: 38%;
+        top: 20px;
     }
 
     .faq {
         position: relative;
-        margin-bottom: 200px;
+        margin-bottom: 150px;
 
         .faq_tag {
             display: flex;
@@ -471,7 +472,7 @@
             box-shadow: inset 0px 0px 12px rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(5px);
             background: linear-gradient(270deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 100%);
-            margin: 30px auto;
+            margin: 50px auto;
 
             h1 {
                 background: linear-gradient(0.00deg, rgb(128, 128, 128), rgb(255, 255, 255));
@@ -502,7 +503,7 @@
         border-radius: 180px;
         z-index: 11;
         background: var(--color-white-10, rgba(255, 255, 255, 0.10));
-        filter: blur(20px);
+        filter: blur(50px);
     }
 
     .support_section_tag {
