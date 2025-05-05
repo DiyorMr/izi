@@ -90,8 +90,9 @@
     }
 
     /* Arrow animation */
-    .tab input:not(:checked)+.tab__label:hover::after {
-        animation: bounce 0.5s infinite;
+    .tab input:not(:checked)+.tab__label:hover::after,
+    .tab:hover input:not(:checked)+.tab__label::after {
+        animation: bounce 0.7s infinite;
     }
 
     @keyframes bounce {

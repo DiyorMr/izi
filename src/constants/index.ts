@@ -8,8 +8,6 @@ import messege from '/images/messege.svg'
 import call from '/images/call.svg'
 
 
-
-
 export const featuresCardData = [
     {
         title: 'Financial Guidance',
@@ -36,13 +34,14 @@ export const plansData = [
     {
         title: 'Basic',
         price: 'CUSTOM',
+        img:"icon",
         features: [
             'Access to Budgeting Tools',
             'Basic Budgeting and Expense Tracking',
             'Access to Educational Resources',
             'Real-time Chat Support'
         ],
-        highlight: false,
+        
     },
     {
         title: 'Basic',
@@ -53,7 +52,7 @@ export const plansData = [
             'Access to Educational Resources',
             'Real-time Chat Support'
         ],
-        highlight: false,
+        
     },
     {
         title: 'Premium',
@@ -66,8 +65,7 @@ export const plansData = [
             'Custom Savings Goals with Tracker',
             'Priority Chat Support'
         ],
-        highlight: false,
-    },
+            },
     {
         title: 'Basic',
         price: '$29',
@@ -80,7 +78,7 @@ export const plansData = [
             'Access to Educational Resources',
             'Real-time Chat Support'
         ],
-        highlight: false,
+        
     }
 ];
 export const infoData = [
@@ -258,7 +256,6 @@ export const modalData = [
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
 ]
-
 export const supportCardData = [
     {
         img: sms,

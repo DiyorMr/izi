@@ -1,5 +1,4 @@
 .pricings {
-
     .pricing {
         display: flex;
         justify-content: space-between;
@@ -15,22 +14,13 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;            
+            justify-content: space-between;
             cursor: pointer;
-
-            &:hover {
-                border-color: #00cc7a;
-            }
-
-            &.highlight {
-                background: #00cc7a;
-                border-color: #00cc7a;
-            }
 
             &.active {
                 border-color: #00ffcc;
                 background: linear-gradient(145deg, #002b1e, #004d3d);
-                transform: scale(1.03);
+                transform: scale(1.01);
 
                 .card__button {
                     background: #00cc7a;
@@ -92,14 +82,18 @@
                 text-align: left;
 
                 li {
-                    font-size: 12px;
-                    margin-bottom: 8px;
                     display: flex;
                     align-items: center;
+                    gap: 12px;
+                    margin: 16px auto;
 
                     span {
-                        color: #00ffcc;
-                        margin-right: 6px;
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 11px;
+                        font-weight: 400;
+                        line-height: 17.92px;
+                        letter-spacing: 0.14px;
+                        text-align: left;
                     }
                 }
             }
@@ -120,11 +114,10 @@
                 box-shadow: inset 0px 0px 24px 0px rgba(255, 255, 255, 0.07);
                 backdrop-filter: blur(5px);
                 background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
+            }
 
-                &:hover {
-                    background: #00cc7a;
-                }
-
+            .card__button:hover {
+                background: #00cc7a;
             }
         }
     }
