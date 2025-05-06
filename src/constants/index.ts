@@ -34,14 +34,14 @@ export const plansData = [
     {
         title: 'Basic',
         price: 'CUSTOM',
-        img:"icon",
+        img: "icon",
         features: [
             'Access to Budgeting Tools',
             'Basic Budgeting and Expense Tracking',
             'Access to Educational Resources',
             'Real-time Chat Support'
         ],
-        
+
     },
     {
         title: 'Basic',
@@ -52,7 +52,7 @@ export const plansData = [
             'Access to Educational Resources',
             'Real-time Chat Support'
         ],
-        
+
     },
     {
         title: 'Premium',
@@ -65,7 +65,7 @@ export const plansData = [
             'Custom Savings Goals with Tracker',
             'Priority Chat Support'
         ],
-            },
+    },
     {
         title: 'Basic',
         price: '$29',
@@ -78,7 +78,7 @@ export const plansData = [
             'Access to Educational Resources',
             'Real-time Chat Support'
         ],
-        
+
     }
 ];
 export const infoData = [
