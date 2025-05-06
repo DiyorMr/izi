@@ -21,22 +21,24 @@ const
                                 className={`card ${activeIndex === index ? "active" : ""}`}
                                 onClick={() => handleCardClick(index)}
                             >
-                                <div className="card__title">{plan.title}</div>
-                                <div className="card__price">
-                                    {plan.price}
-                                    {plan.period && <span className="card__period">{plan.period}</span>}
+                                <div>
+                                    <div className="card__title">{plan.title}</div>
+                                    <div className="card__price">
+                                        {plan.price}
+                                        {plan.period && <span className="card__period">{plan.period}</span>}
+                                    </div>
+                                    <p className="card__desc">
+                                        Ideal for individuals looking to manage their finances
+                                    </p>
+                                    <ul className="card__features">
+                                        {plan.features.map((item: string, i: number) => (
+                                            <li key={i}>
+                                                <img src="./images/activeicon.svg" alt="image" />
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
-                                <p className="card__desc">
-                                    Ideal for individuals looking to manage their finances
-                                </p>
-                                <ul className="card__features">
-                                    {plan.features.map((item: string, i: number) => (
-                                        <li key={i}>
-                                            <img src="./images/activeicon.svg" alt="image" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
                                 <a className="card__button">
                                     GET STARTED
                                 </a>
