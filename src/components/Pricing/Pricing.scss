@@ -121,9 +121,10 @@
         }
 
         .card:hover {
+            border-color: #00ffcc;
+            background: linear-gradient(145deg, #002b1e, #004d3d);
             cursor: pointer;
-            background: linear-gradient(43deg, var(--color-spring-green-697, rgba(104, 247, 187, 0.07)) 0%, var(--color-spring-green-6920, rgba(104, 247, 187, 0.20)) 100%);
-            box-shadow: 0px -2px 0px 0px #68F7BB inset, 0px 0px 48px 0px rgba(255, 255, 255, 0.07) inset;
+
         }
     }
 }
