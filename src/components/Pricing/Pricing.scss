@@ -114,10 +114,6 @@
                 backdrop-filter: blur(5px);
                 background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15) 100%);
             }
-
-            .card__button:hover {
-                background: #00cc7a;
-            }
         }
 
         .card:hover {
@@ -125,7 +121,11 @@
             background: linear-gradient(145deg, #002b1e, #004d3d);
             cursor: pointer;
 
+            .card__button {
+                background: #00cc7a;
+            }
         }
+
     }
 }
 
