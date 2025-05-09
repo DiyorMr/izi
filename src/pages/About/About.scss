@@ -10,7 +10,7 @@
 }
 
 .rheader {
-    max-width: 1280px;
+    max-width: 1250px;
     margin: 0 auto;
     background-image: url(../../../public/images/izi.svg);
     background-size: cover;
@@ -73,6 +73,9 @@
 
 .rhero {
     margin-top: 200px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.21), #000000);
     border-radius: 12px;
     padding: 20px;
@@ -131,6 +134,9 @@
 }
 
 .rsection {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 90px;
     width: 100%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.21), #000000);

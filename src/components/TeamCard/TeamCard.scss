@@ -14,7 +14,7 @@
 
 
 .icon-box {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   border-radius: 16px;
   transition: filter .3s ease-in-out;
   border: 1px solid rgb(50, 207, 50);
@@ -27,31 +27,12 @@
   -moz-border-radius: 34px;
   -ms-border-radius: 34px;
   -o-border-radius: 34px;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
   transition: 0.6s;
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
   -ms-transition: 0.6s;
   -o-transition: 0.6s;
-
-  &:hover {
-    filter: grayscale(0%);
-    border-radius: 16px;
-    transition: filter .3s ease-in-out;
-    border: 1px solid rgb(50, 207, 50);
-    border-bottom: 4px solid rgb(50, 207, 50);
-    width: 266px;
-    height: 304px;
-    border-radius: 34px;
-    background: transparent;
-    -webkit-border-radius: 34px;
-    -moz-border-radius: 34px;
-    transition: 0.6;
-    -webkit-transition: 0.6;
-    -moz-transition: 0.6;
-    -ms-transition: 0.6;
-    -o-transition: 0.6;
-  }
 }
 
 
